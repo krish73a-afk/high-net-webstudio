@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Momentum Fitness Programs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <script src="../../../demo-utils.js" defer></script>
+  <link rel="stylesheet" href="../../../demo-nav.css">
+<link rel="icon" type="image/svg+xml" href="../../../assets/favicon.svg">
+</head>
+<body data-page="programs">
+  <div class="highnet-demo-back"><a href="../../../demos.html">← High Net Webstudio · All 9 demos</a><span>CONCEPT DEMO · FICTIONAL BUSINESS</span></div>
+  <div class="topbar"><div class="container topbar-inner"><span>Goal-based programs · Recovery-aware coaching</span><a href="join.html">Start your membership ↗</a></div></div>
+  <header class="site-header"><div class="container nav-wrap"><a href="index.html" class="brand"><span class="brand-mark">M</span><span class="brand-text">Momentum Fitness</span></a><button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button><nav class="site-nav" id="siteNav"><a href="index.html">Home</a><a href="programs.html" class="active">Programs</a><a href="join.html">Membership</a><a href="join.html#contact">Contact</a><a href="join.html" class="nav-cta">Join now</a></nav></div></header>
+  <main>
+    <section class="page-hero alt-surface">
+      <div class="container reveal">
+        <p class="eyebrow">PROGRAM EXPLORER</p>
+        <h1>Choose a training direction that fits your goal.</h1>
+        <p>Search, filter, and compare the core Momentum pathways. Each program is designed to feel structured and understandable.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="tool-row reveal">
+          <label class="search-box">
+            <span>Search programs</span>
+            <input type="search" id="programSearch" placeholder="Search by goal, style, or focus" />
+          </label>
+          <div class="filter-pills" id="programFilters"></div>
+        </div>
+        <div class="count-line reveal" id="programCount"></div>
+        <div class="program-list-grid reveal" id="programGrid"></div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal" id="programModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-card">
+      <button class="modal-close" aria-label="Close dialog" data-close-modal type="button">×</button>
+      <p class="eyebrow" id="modalCategory"></p>
+      <h3 id="modalTitle"></h3>
+      <p id="modalText"></p>
+      <div class="modal-meta" id="modalMeta"></div>
+      <a href="join.html" class="btn btn-primary modal-btn">Enquire now</a>
+    </div>
+  </div>
+
+  <footer class="site-footer"><div class="container footer-grid"><div><div class="brand footer-brand"><span class="brand-mark">M</span><span class="brand-text">Momentum Fitness</span></div><p>Advanced gym demo created for High Net Webstudio.</p></div><div><h4>Visit</h4><p>21 Active Street, Central District</p><p>Mon–Sat · 6:00 AM – 10:00 PM</p></div><div><h4>Explore</h4><a href="join.html">Membership</a><a href="join.html#contact">Contact</a></div></div><div class="container footer-note"><span>© <span id="year"></span> Momentum Fitness</span><span>Fictional demo website for portfolio use.</span></div></footer>
+</body>
+</html>

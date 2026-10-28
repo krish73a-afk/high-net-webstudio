@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="710" height="650" viewBox="0 0 710 650" role="img" aria-labelledby="t d">
+<title id="t">Illustrated learning studio</title><desc id="d">Two students collaborate around an open book against colourful abstract educational shapes.</desc>
+<defs>
+ <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#f5dfa1"/><stop offset="1" stop-color="#f7b9ac"/></linearGradient>
+ <linearGradient id="teal" x2=".8" y2="1"><stop stop-color="#166f74"/><stop offset="1" stop-color="#0b505a"/></linearGradient>
+ <filter id="sh" x="-.3" y="-.3" width="1.6" height="1.7"><feDropShadow dx="0" dy="15" stdDeviation="15" flood-color="#204d54" flood-opacity=".15"/></filter>
+</defs>
+<!-- Main organic backdrop -->
+<path d="M138 85C248 10 486 14 567 117c111 140 114 364-40 452-147 84-355 51-432-64C10 379-5 180 138 85Z" fill="url(#bg)"/>
+<circle cx="585" cy="128" r="45" fill="#f2b85d" opacity=".75"/>
+<path d="M83 119c26-29 47-38 64-38M586 470l42 23M603 459l41-5" fill="none" stroke="#1f7582" stroke-width="7" stroke-linecap="round"/>
+<!-- window / board -->
+<g filter="url(#sh)"><rect x="174" y="114" width="384" height="316" rx="24" fill="#f8f8ed"/><rect x="197" y="138" width="338" height="236" rx="12" fill="#b9e3dd"/>
+<path d="M365 139v236M198 255h337" stroke="#f7f5e9" stroke-width="8"/>
+<circle cx="447" cy="210" r="32" fill="#ffe087"/><path d="M220 360c53-88 116-102 157-63 44-40 105-36 159 38v42H198v-17Z" fill="#87bdae"/></g>
+<!-- leaves plant -->
+<path d="M593 480c-17-58-6-113 4-158" fill="none" stroke="#367d6b" stroke-width="7" stroke-linecap="round"/>
+<path d="M591 419c-65-25-57-59-51-75 31 12 50 33 51 75Zm7-51c14-51 41-64 57-67 6 33-11 61-57 67Zm-5 106c-63-7-80-35-80-59 34 0 65 23 80 59Z" fill="#56a58f"/>
+<path d="M561 478h73l-12 81h-49z" fill="#ee936d"/>
+<!-- student left -->
+<ellipse cx="267" cy="535" rx="105" ry="19" fill="#d58e80" opacity=".2"/>
+<path d="M176 431c0-76 37-106 87-109 48-3 93 29 101 109l20 124H159z" fill="#ef816f"/>
+<path d="M192 454c21-29 46-36 78-41 29-4 55 8 78 27" stroke="#c75552" stroke-width="5" fill="none"/>
+<path d="M229 327l-7 38 49 31 30-34-24-45" fill="#e5a077"/>
+<ellipse cx="260" cy="269" rx="70" ry="80" fill="#e9a77d"/>
+<path d="M190 260c-9-66 35-111 86-111 61 0 94 64 63 126l-17 15c-9-33-11-69-40-86-19 27-57 36-92 33Z" fill="#273e45"/>
+<path d="M191 271c-21 17-18 48 0 63l-26 45c-34-28-36-90 26-108Z" fill="#273e45"/>
+<circle cx="236" cy="269" r="4" fill="#243840"/><circle cx="286" cy="269" r="4" fill="#243840"/>
+<path d="M244 305c11 9 24 9 34-1" fill="none" stroke="#914d4b" stroke-width="4" stroke-linecap="round"/>
+<path d="M211 451c37-15 64-12 97-1" fill="none" stroke="#ffcfc0" stroke-width="5" opacity=".45"/>
+<!-- student right -->
+<ellipse cx="437" cy="543" rx="110" ry="18" fill="#d58e80" opacity=".2"/>
+<path d="M361 435c-2-84 30-124 87-124 56 0 99 42 101 127l12 119H340Z" fill="url(#teal)"/>
+<path d="M426 318l3 43 45 22 24-37-16-39" fill="#b87c5a"/>
+<ellipse cx="455" cy="271" rx="62" ry="76" fill="#c88c63"/>
+<path d="M391 276c-23-101 63-137 113-92 25 22 35 67 14 103-2-43-16-64-33-80-18 25-46 32-87 31Z" fill="#302c37"/>
+<path d="M508 255c12 27 17 68 7 98l28 23c26-62 12-101-35-121Z" fill="#302c37"/>
+<circle cx="433" cy="272" r="4" fill="#302c37"/><circle cx="477" cy="272" r="4" fill="#302c37"/>
+<path d="M437 309c9 7 20 7 31-1" fill="none" stroke="#814a45" stroke-width="4" stroke-linecap="round"/>
+<path d="M394 453c36-22 83-23 120 2" fill="none" stroke="#5db0ab" stroke-width="5" opacity=".55"/>
+<!-- desk and shared open book -->
+<rect x="120" y="507" width="465" height="27" rx="12" fill="#db9f6d"/>
+<rect x="138" y="527" width="24" height="91" rx="9" fill="#ab795c"/><rect x="551" y="527" width="23" height="91" rx="9" fill="#ab795c"/>
+<path d="M234 476q58-30 115-4 56-26 116 4v54q-62-28-116 0-53-28-115 0z" fill="#fff8e8" stroke="#f4d0a2" stroke-width="5"/>
+<path d="M349 472v58" stroke="#d5b6a0" stroke-width="4"/>
+<path d="M254 490q39-12 78 2m-78 12q39-10 78 2m38-15q37-13 79-2m-79 18q37-12 79-2" fill="none" stroke="#93b2ad" stroke-width="3" stroke-linecap="round"/>
+<!-- decorative sparkles -->
+<path d="M120 279l9-22 9 22 23 9-23 9-9 22-9-22-22-9Zm434-111 5-12 5 12 12 5-12 5-5 12-5-12-12-5Z" fill="#f6b95d"/>
+</svg>

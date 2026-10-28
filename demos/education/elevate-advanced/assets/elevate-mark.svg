@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Elevate Learning logo">
+<rect width="64" height="64" rx="18" fill="#115f63"/>
+<path d="M13 18c11-3 18-1 19 4 1-5 8-7 19-4v29c-9-2-16-1-19 5-3-6-10-7-19-5z" fill="#f7da79"/>
+<path d="M32 22v30M18 25c4-1 7-1 10 1m8 0c3-2 6-2 10-1M18 33c4-1 7-1 10 1m8 0c3-2 6-2 10-1" fill="none" stroke="#115f63" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M44 7l2.7 6 6.3 2.3-6.3 2.4L44 24l-2.3-6.3-6.4-2.4 6.4-2.3z" fill="#ef8069"/>
+</svg>

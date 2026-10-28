@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Join FORGE Performance</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <script src="../../../demo-utils.js" defer></script>
+  <link rel="stylesheet" href="../../../demo-nav.css">
+<link rel="icon" type="image/svg+xml" href="../../../assets/favicon.svg">
+</head>
+<body data-page="join">
+  <div class="highnet-demo-back"><a href="../../../demos.html">← High Net Webstudio · All 9 demos</a><span>CONCEPT DEMO · FICTIONAL BUSINESS</span></div>
+  <div class="grain"></div>
+  <div class="announcement-bar"><div class="container announcement-inner"><span>Membership application · Consultation booking</span><a href="#joinForm">Open application ↗</a></div></div>
+  <header class="site-header"><div class="container nav-wrap"><a href="index.html" class="brand"><span class="brand-mark">F</span><span class="brand-block"><strong>FORGE</strong><small>Performance Studio</small></span></a><button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button><nav class="site-nav" id="siteNav"><a href="index.html">Home</a><a href="programs.html">Programs</a><a href="experience.html">Experience</a><a href="join.html" class="active">Membership</a><a href="#contact" class="nav-cta">Book consultation</a></nav></div></header>
+
+  <main>
+    <section class="page-hero surface-alt">
+      <div class="container reveal">
+        <p class="eyebrow">MEMBERSHIP APPLICATION</p>
+        <h1>Begin with an enquiry that feels tailored.</h1>
+        <p class="soft-text">Premium websites should guide the user with calm clarity. This application flow previews the enquiry and helps the studio recommend a membership.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container join-layout premium-join-layout">
+        <form class="join-form premium-form reveal" id="joinForm">
+          <div class="form-head">
+            <p class="eyebrow">APPLICATION FORM</p>
+            <h2>Apply for membership</h2>
+            <p class="soft-text">This is a frontend preview form for demonstration. It does not connect to a real CRM or email inbox.</p>
+          </div>
+
+          <div class="form-grid">
+            <label><span>Full name</span><input id="memberName" type="text" required placeholder="Your full name" /></label>
+            <label><span>Email address</span><input id="memberEmail" type="email" required placeholder="name@example.com" /></label>
+            <label><span>Phone number</span><input id="memberPhone" type="tel" required placeholder="+91 98765 43210" /></label>
+            <label><span>Preferred plan</span><select id="preferredPlan"><option value="Essential FORGE">Essential FORGE</option><option value="Performance Membership">Performance Membership</option><option value="Black Label Coaching">Black Label Coaching</option></select></label>
+          </div>
+
+          <div class="form-grid">
+            <label><span>Main goal</span><select id="mainGoal"><option>Build strength</option><option>Improve body composition</option><option>Boost conditioning</option><option>Move better and recover better</option><option>Private premium coaching</option></select></label>
+            <label><span>Preferred start</span><select id="startTime"><option>This week</option><option>Next week</option><option>This month</option><option>Just exploring</option></select></label>
+          </div>
+
+          <label><span>Tell us about your training background</span><textarea id="memberNotes" rows="5" placeholder="Experience level, injuries, class interest, coaching preference, or anything else."></textarea></label>
+
+          <div class="form-actions spaced-actions">
+            <button class="btn btn-primary" type="submit">Preview application</button>
+            <a href="#contact" class="btn btn-outline">Contact the studio</a>
+          </div>
+        </form>
+
+        <aside class="join-side reveal">
+          <div class="info-panel premium-panel">
+            <p class="eyebrow">MEMBERSHIP BENEFITS</p>
+            <h3>What the FORGE membership includes</h3>
+            <ul>
+              <li>Private consultation and movement review</li>
+              <li>Premium coaching direction and progression planning</li>
+              <li>Structured training with recovery emphasis</li>
+              <li>Calmer studio environment with premium service</li>
+            </ul>
+          </div>
+
+          <div class="info-panel premium-panel" id="contact">
+            <p class="eyebrow">CONTACT</p>
+            <h3>Speak with the FORGE team</h3>
+            <p>8 Heritage Lane, Central District</p>
+            <p>+91 98110 40404</p>
+            <p>hello@forgeperformance.demo</p>
+            <p>Mon–Sat · 6:00 AM – 9:00 PM</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal" id="enquiryModal" role="dialog" aria-modal="true" aria-label="Membership enquiry preview" hidden>
+    <div class="modal-backdrop" data-close-enquiry></div>
+    <div class="modal-card premium-modal">
+      <button class="modal-close" aria-label="Close dialog" data-close-enquiry type="button">×</button>
+      <p class="eyebrow">APPLICATION PREVIEW</p>
+      <h3>FORGE membership enquiry</h3>
+      <div class="summary-list" id="enquirySummary"></div>
+    </div>
+  </div>
+
+  <footer class="site-footer"><div class="container footer-grid"><div><div class="brand footer-brand"><span class="brand-mark">F</span><span class="brand-block"><strong>FORGE</strong><small>Performance Studio</small></span></div><p>Premium fitness demo created for High Net Webstudio.</p></div><div><h4>Visit</h4><p>8 Heritage Lane, Central District</p><p>Mon–Sat · 6:00 AM – 9:00 PM</p></div><div><h4>Explore</h4><a href="programs.html">Programs</a><a href="experience.html">Experience</a></div></div><div class="container footer-note"><span>© <span id="year"></span> FORGE Performance</span><span>Fictional premium website demo for portfolio use.</span></div></footer>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f9f8f2" />
+  <meta name="description" content="FitZone is a welcoming gym with strength, cardio and mobility classes. Browse the sample program list and weekly timetable." />
+  <title>FitZone — Your kind of movement.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+  <script src="../../../demo-utils.js" defer></script>
+  <link rel="stylesheet" href="../../../demo-nav.css">
+<link rel="icon" type="image/svg+xml" href="../../../assets/favicon.svg">
+</head>
+<body>
+  <div class="highnet-demo-back"><a href="../../../demos.html">← High Net Webstudio · All 9 demos</a><span>CONCEPT DEMO · FICTIONAL BUSINESS</span></div>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="demo-strip"><span class="strip-spark">✳</span> <strong>Portfolio concept</strong><span class="strip-separator">/</span> A fictional fitness studio designed by High Net Webstudio.</div>
+  <header class="header" id="top">
+    <div class="container header-inner">
+      <a class="logo" href="#top" aria-label="FitZone homepage"><span class="logo-symbol">fz<span>✳</span></span><span class="logo-word">fit<span>zone.</span></span></a>
+      <button class="menu-button" id="menuButton" type="button" aria-controls="mainNav" aria-expanded="false" aria-label="Open navigation"><span></span><span></span><span></span></button>
+      <nav class="nav" id="mainNav" aria-label="Main navigation">
+        <a href="#programs">Programs</a><a href="#schedule">Class schedule</a><a href="#memberships">Memberships</a><a href="#about">Our studio</a><a href="#contact">Contact</a>
+      </nav>
+      <a class="btn btn-dark header-cta" href="#contact">Visit FitZone <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="heroTitle">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="eyebrow-dot"></span> A DIFFERENT KIND OF GYM</span>
+          <h1 id="heroTitle">Move your way.<br/><em>Feel your best.</em></h1>
+          <p class="hero-desc">A bright space to train, try something new, and enjoy moving. Friendly coaches, flexible classes and a community that welcomes every starting point.</p>
+          <div class="hero-actions"><a class="btn btn-dark" href="#programs">Explore our programs <span aria-hidden="true">↗</span></a><a class="btn btn-text" href="#schedule">View class times <span aria-hidden="true">→</span></a></div>
+          <div class="hero-footnote"><span class="hero-footnote-icon" aria-hidden="true">✳</span><span><b>New here? You're welcome.</b><small>Start with what feels comfortable.</small></span></div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-art-blob blob-one"></div><div class="hero-art-blob blob-two"></div>
+          <div class="hero-illustration"><img src="assets/gym-studio.svg" alt="Illustration of a bright, welcoming fitness studio with strength equipment and training space" width="720" height="650" /></div>
+          <div class="hero-sticker sticker-top"><span class="sticker-icon">✦</span><strong>YOUR PACE.</strong><br/>YOUR SPACE.</div>
+          <div class="hero-sticker sticker-bottom"><span class="sticker-status" aria-hidden="true"></span> GOOD ENERGY INSIDE</div>
+        </div>
+      </div>
+      <div class="container hero-bottom-bar"><span>STRENGTH</span><span class="bar-star">✳</span><span>CARDIO</span><span class="bar-star">✳</span><span>MOBILITY</span><span class="bar-star">✳</span><span>COMMUNITY</span></div>
+    </section>
+
+    <section class="welcome section" id="about">
+      <div class="container">
+        <div class="section-heading heading-split"><div><span class="eyebrow"><span class="eyebrow-dot"></span> THIS IS FITZONE</span><h2>Good days start<br/>with <em>movement.</em></h2></div><p>FitZone is the kind of place where you can ask a question, try a new class, or train on your own. No complicated sign-up journey. Just space, support, and workouts that fit your day.</p></div>
+        <div class="value-cards">
+          <article class="value-card"><div class="value-icon icon-lime">↗</div><h3>Move your way</h3><p>Choose from open gym access, instructor-led sessions, and one-to-one guidance.</p></article>
+          <article class="value-card"><div class="value-icon icon-coral">✳</div><h3>Feel supported</h3><p>Friendly staff, clear class info, and useful guidance for newcomers.</p></article>
+          <article class="value-card"><div class="value-icon icon-purple">◉</div><h3>Make it yours</h3><p>Try different activities and find the ones you enjoy coming back to.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="programs section" id="programs" aria-labelledby="programTitle">
+      <div class="container">
+        <div class="section-heading section-heading-center"><span class="eyebrow"><span class="eyebrow-dot"></span> FIND YOUR FIT</span><h2 id="programTitle">Something for <em>everyone.</em></h2><p>Not sure where to start? Search by activity or choose what sounds interesting. Every program has a little more information to help you decide.</p></div>
+        <div class="program-tools"><label class="search-wrap"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><span class="visually-hidden">Search programs</span><input id="programSearch" type="search" placeholder="Search programs or activities..." autocomplete="off" /></label><div class="filter-set" role="group" aria-label="Filter by type" id="programFilters"><button type="button" class="filter active" data-filter="all" aria-pressed="true">All programs</button><button type="button" class="filter" data-filter="strength" aria-pressed="false">Strength</button><button type="button" class="filter" data-filter="cardio" aria-pressed="false">Cardio</button><button type="button" class="filter" data-filter="mobility" aria-pressed="false">Mind & body</button></div></div>
+        <div class="program-count" id="programCount" role="status" aria-live="polite">6 programs to explore</div>
+        <div class="program-grid" id="programGrid"></div>
+        <div class="empty-state" id="programEmpty" hidden><div aria-hidden="true">⌕</div><h3>Nothing matched that search.</h3><p>Try another word, or see all programs again.</p><button class="btn btn-dark" id="resetPrograms" type="button">Reset filters</button></div>
+      </div>
+    </section>
+
+    <section class="schedule section" id="schedule" aria-labelledby="scheduleTitle">
+      <div class="container schedule-layout">
+        <div class="schedule-intro"><span class="eyebrow"><span class="eyebrow-dot"></span> YOUR WEEK AT FITZONE</span><h2 id="scheduleTitle">Your time.<br/><em>Your session.</em></h2><p>Morning reset, after-work class, or a weekend session. Choose a day to preview what’s happening in our studio.</p><div class="schedule-callout"><span class="callout-icon">↗</span><div><strong>See a class you like?</strong><p>Tap “Ask about this class” and we’ll add it to your enquiry.</p></div></div></div>
+        <div class="schedule-panel"><div class="schedule-top"><div><span class="schedule-label">THE WEEKLY LINEUP</span><h3>Classes this week</h3></div><span class="schedule-sample">SAMPLE TIMETABLE</span></div><div class="days" id="scheduleDays" role="group" aria-label="Choose a schedule day"></div><div id="scheduleEvents" class="schedule-events" aria-live="polite"></div><div class="schedule-panel-foot">Sample timings for this fictional studio. Classes are subject to change.</div></div>
+      </div>
+    </section>
+
+    <section class="memberships section" id="memberships" aria-labelledby="membershipsTitle">
+      <div class="container"><div class="section-heading section-heading-center"><span class="eyebrow"><span class="eyebrow-dot"></span> JOIN THE GOOD ENERGY</span><h2 id="membershipsTitle">Keep it <em>simple.</em></h2><p>Three straightforward options, depending on how you like to train. Choose one to ask for more details.</p></div><p class="sample-pricing">Illustrative monthly membership pricing for this demo only — not a real offer.</p><div class="plans">
+        <article class="plan"><span class="plan-label">01 / SELF-GUIDED</span><h3>Open Gym</h3><p>Space and equipment for your own routine.</p><div class="plan-price">₹999 <small>/ month</small></div><ul><li>Gym floor access</li><li>Equipment orientation</li><li>Flexible visit times</li></ul><button class="btn btn-outline-dark plan-btn" data-plan="Open Gym" type="button">Enquire about this plan <span aria-hidden="true">↗</span></button></article>
+        <article class="plan plan-featured"><span class="popular-tag">MOST FLEXIBLE</span><span class="plan-label">02 / TRAIN TOGETHER</span><h3>Gym + Classes</h3><p>Use the gym and explore group workouts.</p><div class="plan-price">₹1,699 <small>/ month</small></div><ul><li>Gym floor access</li><li>Weekly group classes</li><li>Class timetable updates</li></ul><button class="btn btn-dark plan-btn" data-plan="Gym + Classes" type="button">Enquire about this plan <span aria-hidden="true">↗</span></button></article>
+        <article class="plan"><span class="plan-label">03 / GUIDED TRAINING</span><h3>Coaching</h3><p>Prefer individual support? Start here.</p><div class="plan-price">₹2,499 <small>/ month</small></div><ul><li>Gym floor access</li><li>Coaching consultations</li><li>Personalized session planning</li></ul><button class="btn btn-outline-dark plan-btn" data-plan="Coaching" type="button">Enquire about this plan <span aria-hidden="true">↗</span></button></article>
+      </div></div>
+    </section>
+
+    <section class="space section"><div class="container space-inner"><div class="space-art"><div class="space-bubble">A little room<br/><strong>to MOVE.</strong></div><img src="assets/gym-studio.svg" alt="Illustrated FitZone exercise studio with barbells, bench and exercise mat" loading="lazy" width="720" height="650"/></div><div class="space-copy"><span class="eyebrow"><span class="eyebrow-dot"></span> COME SEE THE SPACE</span><h2>More than<br/>just <em>equipment.</em></h2><p>Bright training areas, places to stretch, thoughtful facilities and a team happy to show you around.</p><div class="facility-list"><span>✦ Open gym floor</span><span>✦ Stretch & mobility area</span><span>✦ Small-group classes</span><span>✦ Friendly introductions</span></div><a href="#contact" class="btn btn-dark">Ask about a studio visit <span aria-hidden="true">↗</span></a></div></div></section>
+
+    <section class="faq section" aria-labelledby="faqTitle"><div class="container faq-layout"><div><span class="eyebrow"><span class="eyebrow-dot"></span> QUICK ANSWERS</span><h2 id="faqTitle">A few things<br/><em>worth knowing.</em></h2><p>Curious about starting? These example answers cover the questions people usually ask first.</p></div><div class="faqs"><details><summary>Do I need gym experience to join?<span aria-hidden="true">+</span></summary><p>Not at all. The sample studio offers a friendly introduction to the training spaces and equipment.</p></details><details><summary>Can I try different classes?<span aria-hidden="true">+</span></summary><p>The Gym + Classes example plan includes access to different group sessions listed in the timetable.</p></details><details><summary>How can I find a class that suits me?<span aria-hidden="true">+</span></summary><p>Use the program filters and check the weekly schedule. You can ask about any class from its timetable row.</p></details><details><summary>Are prices and class times final?<span aria-hidden="true">+</span></summary><p>No. This is a fictional portfolio demonstration, so all plans and timetables are editable examples.</p></details></div></div></section>
+
+    <section class="contact section" id="contact" aria-labelledby="contactTitle"><div class="container contact-inner"><div class="contact-copy"><span class="eyebrow eyebrow-light"><span class="eyebrow-dot"></span> DROP US A MESSAGE</span><h2 id="contactTitle">Let's get you<br/><em>moving.</em></h2><p>Have a question about a membership, a class, or visiting the studio? Send a quick enquiry preview below.</p><div class="contact-facts"><div><span class="contact-icon">◷</span><div><b>Sample studio hours</b><small>Mon–Sat: 6:00 AM – 10:00 PM</small></div></div><div><span class="contact-icon">⌖</span><div><b>Sample location</b><small>Central District · Demo Studio</small></div></div><div><span class="contact-icon">✉</span><div><b>Questions welcome</b><small>This demo does not submit personal information.</small></div></div></div></div><div class="contact-form-card"><div class="contact-form-head"><span class="contact-kicker">SAY HELLO TO FITZONE</span><h3>Your enquiry</h3><p>Fill the form to preview what an enquiry would look like.</p></div><form id="contactForm" novalidate><div class="form-row"><label>Full name<input id="contactName" name="name" autocomplete="name" placeholder="Your name" maxlength="80" required/></label><label>Email address<input id="contactEmail" name="email" type="email" autocomplete="email" placeholder="you@example.com" maxlength="120" required/></label></div><label>I'm interested in<select id="contactInterest" name="interest"><option>General enquiry</option><option>Open Gym</option><option>Gym + Classes</option><option>Coaching</option><option>Strength Foundations</option><option>Functional Strength</option><option>Cardio Circuit</option><option>Dance Cardio</option><option>Mobility Flow</option><option>Stretch & Reset</option></select></label><label>Your message<textarea id="contactMessage" name="message" rows="3" maxlength="500" placeholder="What would you like to know?" required></textarea></label><button class="btn btn-dark btn-submit" type="submit">Preview enquiry <span aria-hidden="true">↗</span></button><p class="form-note">Demo form only. Nothing is sent or saved.</p></form><div class="enquiry-preview" id="enquiryPreview" hidden aria-live="polite"><div class="preview-top"><span>✓</span><strong>Enquiry preview ready</strong></div><p>This is what your enquiry would contain; it has not been submitted.</p><dl id="previewFields"></dl><button type="button" class="preview-edit" id="editEnquiry">Edit my enquiry</button></div></div></div></section>
+  </main>
+  <footer class="footer"><div class="container footer-top"><a class="logo" href="#top" aria-label="FitZone home"><span class="logo-symbol">fz<span>✳</span></span><span class="logo-word">fit<span>zone.</span></span></a><p>Come for the workout. Stay for the good energy.</p><div class="footer-links"><a href="#programs">Programs</a><a href="#schedule">Schedule</a><a href="#memberships">Memberships</a><a href="#contact">Contact</a></div></div><div class="container footer-bottom"><span>© <span id="year"></span> FitZone. Portfolio concept only.</span><span>Designed for High Net Webstudio.</span></div></footer>
+  <dialog class="program-dialog" id="programDialog" aria-labelledby="dialogTitle"><button type="button" class="dialog-close" id="dialogClose" aria-label="Close program details">×</button><div class="dialog-art" id="dialogArt"></div><div class="dialog-content"><span class="eyebrow" id="dialogCategory">PROGRAM</span><h2 id="dialogTitle"></h2><p id="dialogDescription"></p><div class="dialog-facts"><div><b>Session</b><span id="dialogDuration"></span></div><div><b>Good to know</b><span id="dialogLevel"></span></div></div><button type="button" id="dialogInterest" class="btn btn-dark">Ask about this program <span aria-hidden="true">↗</span></button></div></dialog>
+</body>
+</html>

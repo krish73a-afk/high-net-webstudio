@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 610" role="img" aria-labelledby="title desc">
+<title id="title">Study desk illustration</title><desc id="desc">Notebook, books, sketches and a coffee mug around a learning planner</desc>
+<defs>
+<pattern id="dots" width="25" height="25" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.3" fill="#7991dd" opacity=".48"/></pattern>
+<filter id="shadow" x="-25%" width="150%" y="-25%" height="160%"><feDropShadow dx="0" dy="15" stdDeviation="12" flood-opacity=".14"/></filter>
+</defs>
+<circle cx="366" cy="295" r="259" fill="#bdcaee"/>
+<circle cx="366" cy="295" r="259" fill="url(#dots)"/>
+<g transform="translate(70 84) rotate(-6 300 235)">
+<rect x="100" y="64" width="475" height="395" rx="24" fill="#f2f0e7" filter="url(#shadow)"/>
+<rect x="120" y="87" width="435" height="355" rx="14" fill="#fffdf6"/>
+<rect x="147" y="116" width="170" height="17" rx="8" fill="#2c429d"/>
+<rect x="147" y="147" width="254" height="9" rx="4.5" fill="#cfd5df"/>
+<rect x="147" y="167" width="190" height="9" rx="4.5" fill="#e1e3e4"/>
+<rect x="148" y="212" width="178" height="171" rx="15" fill="#e5f4eb"/>
+<path d="M172 350V247M210 350V247M248 350V247M286 350V247M171 350H299" stroke="#badac8" stroke-width="2"/>
+<path d="M178 328l34-33 32 14 48-56" stroke="#2f8c70" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+<circle cx="178" cy="328" r="8" fill="#2f8c70"/><circle cx="292" cy="253" r="8" fill="#2f8c70"/>
+<rect x="355" y="212" width="165" height="52" rx="12" fill="#e2e7ff"/>
+<circle cx="379" cy="238" r="10" fill="#4764d4"/><path d="m374 238 4 4 7-9" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+<rect x="399" y="230" width="97" height="7" rx="4" fill="#5672bb"/><rect x="399" y="245" width="66" height="5" rx="3" fill="#b6c2e8"/>
+<rect x="355" y="276" width="165" height="52" rx="12" fill="#fce5d4"/>
+<circle cx="379" cy="302" r="10" fill="#ec9271"/><path d="m374 302 4 4 7-9" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+<rect x="399" y="294" width="97" height="7" rx="4" fill="#b87b68"/><rect x="399" y="309" width="66" height="5" rx="3" fill="#dfb7a7"/>
+<rect x="355" y="341" width="140" height="13" rx="6.5" fill="#d1d6df"/><rect x="355" y="364" width="100" height="13" rx="6.5" fill="#e4e6e8"/>
+</g>
+<g transform="translate(65 55) rotate(9 60 70)" filter="url(#shadow)"><rect x="0" y="0" width="133" height="128" rx="14" fill="#ffd96f"/><rect x="15" y="15" width="103" height="98" rx="8" fill="#ffeaa9"/><path d="M35 45h61M35 64h45M35 83h61" stroke="#c39b43" stroke-width="6" stroke-linecap="round"/><circle cx="106" cy="96" r="12" fill="#f5aa85"/></g>
+<g transform="translate(515 30) rotate(26 50 150)" filter="url(#shadow)"><rect x="38" y="70" width="24" height="205" rx="8" fill="#eea388"/><rect x="42" y="95" width="5" height="160" rx="2" fill="#ffd2c1"/><rect x="38" y="64" width="24" height="30" rx="3" fill="#283f8b"/><path d="M38 276h24l-12 27z" fill="#f4cfaa"/><path d="M46 294h8l-4 9z" fill="#333a4d"/></g>
+<g transform="translate(36 418) rotate(-13 90 48)" filter="url(#shadow)"><rect x="0" y="24" width="190" height="74" rx="10" fill="#264889"/><rect x="8" y="22" width="174" height="56" rx="7" fill="#b9d8d1"/><rect x="16" y="5" width="174" height="67" rx="9" fill="#fff6cf"/><rect x="27" y="24" width="85" height="9" rx="4" fill="#e0c77a"/><rect x="27" y="42" width="119" height="8" rx="4" fill="#eee1a8"/></g>
+<g transform="translate(545 400)" filter="url(#shadow)"><ellipse cx="59" cy="77" rx="74" ry="22" fill="#d6b7a0" opacity=".5"/><path d="M4 4h104v64a48 48 0 0 1-104 0z" fill="#fff8eb"/><ellipse cx="56" cy="6" rx="53" ry="14" fill="#fff8eb"/><ellipse cx="56" cy="6" rx="40" ry="8" fill="#aa795c"/><path d="M109 21c55-14 52 53 0 44" fill="none" stroke="#fff8eb" stroke-width="15"/><path d="M109 21c55-14 52 53 0 44" fill="none" stroke="#ddcdb8" stroke-width="4"/></g>
+<g transform="translate(620 190)"><path d="M30 70C0 45 5 10 26 0c19 18 20 45 4 70" fill="#2a805b"/><path d="M30 70C15 26 50 8 68 20c-5 30-16 48-38 50" fill="#58a77d"/><path d="M30 69C30 30 67 35 77 56c-10 19-29 22-47 13" fill="#267150"/><path d="M6 73h52l-7 65H14z" fill="#f6be93"/><path d="M7 74h51" stroke="#a67456" stroke-width="6"/></g>
+<path d="m280 34 14-26 14 26 28 9-28 8-14 26-14-26-29-8z" fill="#f2b36c"/>
+<path d="M569 553l8 17 18 6-18 6-8 17-8-17-18-6 18-6z" fill="#284ca5"/>
+</svg>

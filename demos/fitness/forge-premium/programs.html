@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FORGE Performance Programs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <script src="../../../demo-utils.js" defer></script>
+  <link rel="stylesheet" href="../../../demo-nav.css">
+<link rel="icon" type="image/svg+xml" href="../../../assets/favicon.svg">
+</head>
+<body data-page="programs">
+  <div class="highnet-demo-back"><a href="../../../demos.html">← High Net Webstudio · All 9 demos</a><span>CONCEPT DEMO · FICTIONAL BUSINESS</span></div>
+  <div class="grain"></div>
+  <div class="announcement-bar"><div class="container announcement-inner"><span>Goal-led training design</span><a href="join.html">Apply for membership ↗</a></div></div>
+  <header class="site-header"><div class="container nav-wrap"><a href="index.html" class="brand"><span class="brand-mark">F</span><span class="brand-block"><strong>FORGE</strong><small>Performance Studio</small></span></a><button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button><nav class="site-nav" id="siteNav"><a href="index.html">Home</a><a href="programs.html" class="active">Programs</a><a href="experience.html">Experience</a><a href="join.html">Membership</a><a href="join.html#contact" class="nav-cta">Book consultation</a></nav></div></header>
+
+  <main>
+    <section class="page-hero surface-alt">
+      <div class="container reveal">
+        <p class="eyebrow">PROGRAMS</p>
+        <h1>Explore the FORGE training pathways.</h1>
+        <p class="soft-text">Premium program pages should feel curated and easy to explore. Search, filter, and open a detailed view for each pathway.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="tool-row reveal">
+          <label class="search-box">
+            <span>Search a pathway</span>
+            <input id="programSearch" type="search" placeholder="Search by goal, style, or focus" />
+          </label>
+          <div class="filter-pills" id="programFilters"></div>
+        </div>
+
+        <div class="count-line reveal" id="programCount"></div>
+        <div class="program-grid premium-grid" id="programGrid"></div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal" id="programModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-card premium-modal">
+      <button class="modal-close" aria-label="Close dialog" data-close-modal type="button">×</button>
+      <p class="eyebrow" id="modalCategory"></p>
+      <h3 id="modalTitle"></h3>
+      <p id="modalText"></p>
+      <div class="modal-meta" id="modalMeta"></div>
+      <a href="join.html" class="btn btn-primary modal-btn">Apply for membership</a>
+    </div>
+  </div>
+
+  <footer class="site-footer"><div class="container footer-grid"><div><div class="brand footer-brand"><span class="brand-mark">F</span><span class="brand-block"><strong>FORGE</strong><small>Performance Studio</small></span></div><p>Premium fitness demo created for High Net Webstudio.</p></div><div><h4>Visit</h4><p>8 Heritage Lane, Central District</p><p>Mon–Sat · 6:00 AM – 9:00 PM</p></div><div><h4>Explore</h4><a href="experience.html">Experience</a><a href="join.html">Membership</a></div></div><div class="container footer-note"><span>© <span id="year"></span> FORGE Performance</span><span>Fictional premium website demo for portfolio use.</span></div></footer>
+</body>
+</html>

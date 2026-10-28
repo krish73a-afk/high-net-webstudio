@@ -1,0 +1,46 @@
+/* High Net Webstudio navigation bar shared by all nine concept demo sites. */
+.highnet-demo-back { position:relative;z-index:1000;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;padding:10px max(18px,calc((100vw - 1200px)/2));background:#121713;color:#fafaf4;border-bottom:1px solid #3f4740;font:600 12px/1.5 system-ui,-apple-system,sans-serif; }
+.highnet-demo-back a { color:#d9fa91!important;text-decoration:none!important; }
+.highnet-demo-back a:hover,.highnet-demo-back a:focus-visible { text-decoration:underline!important; }
+.highnet-demo-back span { font-size:10px;letter-spacing:.09em;color:#aab4a8; }
+@media(max-width:620px){.highnet-demo-back { padding:10px 14px; }.highnet-demo-back span {font-size:9px;} }
+
+/* Shared accessibility, kept separate from each demo's visual identity. */
+[hidden]{display:none!important}
+html:not(.js) .reveal,html:not(.js) .mask-reveal{opacity:1!important;transform:none!important;clip-path:none!important}
+.highnet-skip{position:fixed;left:12px;top:-100px;z-index:10000;padding:12px 18px;background:#121713;color:#d9fa91!important;border:2px solid #d9fa91;border-radius:8px;font:600 14px system-ui}
+.highnet-skip:focus{top:12px}
+:focus-visible{outline:3px solid currentColor;outline-offset:4px}
+.modal{z-index:2000}
+.modal-card{max-height:90dvh;overflow-y:auto}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+
+@media(max-width:860px){html:not(.demo-ready) :is(#siteNav,#mainNav,#navLinks){display:flex!important;position:static!important;flex-wrap:wrap;height:auto!important;max-height:none!important;opacity:1!important;visibility:visible!important;transform:none!important;width:100%!important;gap:12px;padding:12px}html:not(.demo-ready) :is(#menuToggle,#menuButton){display:none!important}}
+
+/* Intro overlays must release immediately on skip, and recover without scripting. */
+.intro.is-hiding{pointer-events:none!important}
+html:not(.demo-ready) :is(#intro,#introOverlay){display:none!important}
+.intro-screen:not(.intro-hidden),.intro.is-playing,.intro.play,.intro-overlay.is-playing{animation:highnet-intro-release .01s 5s forwards}
+body.is-locked,body.intro-locked,body.intro-lock{animation:highnet-body-release .01s 5s forwards}
+@keyframes highnet-intro-release{to{opacity:0;visibility:hidden;pointer-events:none}}
+@keyframes highnet-body-release{to{overflow:auto}}
+
+body>.highnet-skip{position:fixed;z-index:10000}
+body>:is(.modal,.dish-modal,.summary-modal){position:fixed;inset:0;z-index:2000}
+body>.site-header{position:sticky;top:0;z-index:100}
+html{scroll-padding-top:100px}
+main :is(.hero-grid,.hero-shell,.join-layout,.form-grid,.manifesto-grid)>*{min-width:0}
+.join-form :is(input,select,textarea){width:100%;min-width:0;max-width:100%}
+@media(max-width:380px){main :is(h1,h2){overflow-wrap:anywhere}.announcement-inner{flex-wrap:wrap}}
+main .hero-layout>*{min-width:0}
+@media(max-width:600px){.experience-figure::after{right:-10px;bottom:-10px}}
+.hero-visual>*{min-width:0;max-width:100%}
+.editorial-frame{min-width:0;max-width:100%}
+@media(max-width:380px){.forge-bar{width:min(280px,90%)}}
+
+/* Optional ?preview=1 captures the content without introductory motion. */
+.preview-capture :is(.reveal,.mask-reveal){opacity:1!important;transform:none!important;clip-path:none!important;animation:none!important}
+.preview-capture :is(#intro,#introOverlay){display:none!important}
+.preview-capture body{overflow:auto!important}
+.preview-capture *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+.preview-capture .hero .hero-content>*{opacity:1!important;transform:none!important}

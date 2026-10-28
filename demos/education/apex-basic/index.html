@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#fcfaf5">
+  <meta name="description" content="Explore the Apex Academy concept website: courses, learning approach, weekly schedules and an interactive enquiry preview. A design demo by High Net Webstudio.">
+  <title>Apex Academy — Learn with clarity | Website concept</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <script src="../../../demo-utils.js" defer></script>
+  <link rel="stylesheet" href="../../../demo-nav.css">
+<link rel="icon" type="image/svg+xml" href="../../../assets/favicon.svg">
+</head>
+<body>
+  <div class="highnet-demo-back"><a href="../../../demos.html">← High Net Webstudio · All 9 demos</a><span>CONCEPT DEMO · FICTIONAL BUSINESS</span></div>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="concept-ribbon">
+    <div class="wrap ribbon-inner">
+      <span><span class="ribbon-dot" aria-hidden="true"></span> Website concept — fictional academy, sample courses</span>
+      <a href="mailto:krish73a@gmail.com?subject=Apex%20Academy%20demo%20enquiry">A High Net Webstudio demo <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+
+  <header class="site-header" id="top">
+    <div class="wrap navigation">
+      <a class="logo" href="#top" aria-label="Apex Academy, back to top">
+        <span class="logo-mark" aria-hidden="true">a<span class="logo-dot">.</span></span>
+        <span class="logo-type">apex<span>academy</span></span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation" id="mainNav">
+        <a href="#courses">Courses</a>
+        <a href="#approach">Our approach</a>
+        <a href="#schedule">Weekly plan</a>
+        <a href="#faq">FAQs</a>
+      </nav>
+      <div class="header-actions">
+        <a class="btn btn-small btn-dark" href="#contact">Ask a question <span aria-hidden="true">↗</span></a>
+        <button class="menu-button" type="button" id="menuButton" aria-expanded="false" aria-controls="mainNav" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section-spacing" aria-labelledby="heroHeading">
+      <div class="wrap hero-layout">
+        <div class="hero-content">
+          <p class="eyebrow"><span class="eyebrow-line"></span> A little clarity goes a long way</p>
+          <h1 id="heroHeading">Learning that <span class="highlight-word">clicks<span class="underline-swish" aria-hidden="true"></span></span> with you.</h1>
+          <p class="hero-intro">Find the right course, explore how lessons work, and make space for the questions that matter. Learning should feel clear from the very first step.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="#courses">Explore courses <span class="round-arrow" aria-hidden="true">↗</span></a>
+            <a class="quiet-link" href="#approach">How learning works <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-footnote"><span class="footnote-icon" aria-hidden="true">✳</span><span>Subjects, schedules and support — all in one place.</span></div>
+        </div>
+
+        <div class="hero-stage" aria-label="Illustration of an organized, creative study desk">
+          <div class="stage-background"></div>
+          <div class="stage-tag tag-top" aria-hidden="true"><span>✦</span> Learning, one step at a time</div>
+          <img class="stage-art" src="assets/study-desk.svg" alt="Illustrated notebooks, a pencil, books and a plant on a bright learning desk" fetchpriority="high" width="720" height="610">
+          <div class="stage-tag tag-bottom" aria-hidden="true"><span class="checkmark">✓</span> Find your starting point</div>
+          <span class="stage-star" aria-hidden="true">✳</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefit-strip" aria-label="Learning experience highlights">
+      <div class="wrap benefit-grid">
+        <div class="benefit"><span class="benefit-icon coral" aria-hidden="true">01</span><div><strong>Simple explanations</strong><span>Start with the essentials.</span></div></div>
+        <div class="benefit"><span class="benefit-icon yellow" aria-hidden="true">02</span><div><strong>Room to practise</strong><span>Learn by working through it.</span></div></div>
+        <div class="benefit"><span class="benefit-icon mint" aria-hidden="true">03</span><div><strong>Support along the way</strong><span>Ask, review, and improve.</span></div></div>
+      </div>
+    </section>
+
+    <section class="section-spacing courses-section" id="courses" aria-labelledby="coursesHeading">
+      <div class="wrap">
+        <div class="section-head">
+          <div><span class="section-kicker">01 / FIND YOUR COURSE</span><h2 id="coursesHeading">Start with what <span class="soft-italic">you need.</span></h2></div>
+          <p>From building stronger foundations to preparing for what's next, explore a few example learning paths.</p>
+        </div>
+        <div class="course-toolbar">
+          <div class="filter-pills" role="group" aria-label="Filter programs by category" id="courseFilters">
+            <button class="filter-pill active" type="button" data-category="all" aria-pressed="true">All courses <span>6</span></button>
+            <button class="filter-pill" type="button" data-category="school" aria-pressed="false">Classes 9–10</button>
+            <button class="filter-pill" type="button" data-category="senior" aria-pressed="false">Classes 11–12</button>
+            <button class="filter-pill" type="button" data-category="exam" aria-pressed="false">Exam foundations</button>
+          </div>
+          <label class="search-field"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m16 16 5 5"/></svg><span class="sr-only">Search courses</span><input type="search" id="courseSearch" placeholder="Search a subject..." autocomplete="off"></label>
+        </div>
+
+        <div class="course-grid" id="courseGrid">
+          <article class="course-card" data-category="school" data-search="mathematics maths algebra geometry class 9 10">
+            <div class="course-art tone-lilac"><span class="art-badge">Class 9–10</span><span class="art-symbol art-maths" aria-hidden="true">∑<small>x²</small></span></div>
+            <div class="course-card-body"><div class="course-meta">SCHOOL PROGRAM <span>·</span> MATHEMATICS</div><h3>Mathematics, made clearer</h3><p>Build confidence with algebra, geometry and problem-solving, step by step.</p><button class="course-link" type="button" data-course="maths910">View course details <span aria-hidden="true">↗</span></button></div>
+          </article>
+          <article class="course-card" data-category="school" data-search="science class 9 10 chemistry physics biology experiments">
+            <div class="course-art tone-peach"><span class="art-badge">Class 9–10</span><span class="art-symbol art-atom" aria-hidden="true">⚛</span></div>
+            <div class="course-card-body"><div class="course-meta">SCHOOL PROGRAM <span>·</span> SCIENCE</div><h3>Science in everyday life</h3><p>Get comfortable with core ideas in physics, chemistry and biology.</p><button class="course-link" type="button" data-course="science910">View course details <span aria-hidden="true">↗</span></button></div>
+          </article>
+          <article class="course-card" data-category="senior" data-search="mathematics calculus trigonometry class 11 12 senior">
+            <div class="course-art tone-mint"><span class="art-badge">Class 11–12</span><span class="art-symbol art-graph" aria-hidden="true">ƒ<span>(x)</span></span></div>
+            <div class="course-card-body"><div class="course-meta">SENIOR PROGRAM <span>·</span> MATHEMATICS</div><h3>Maths for the next level</h3><p>Connect functions, trigonometry and calculus with guided practice.</p><button class="course-link" type="button" data-course="maths1112">View course details <span aria-hidden="true">↗</span></button></div>
+          </article>
+          <article class="course-card" data-category="senior" data-search="physics forces motion electricity class 11 12 senior">
+            <div class="course-art tone-blue"><span class="art-badge">Class 11–12</span><span class="art-symbol art-lightning" aria-hidden="true">↯</span></div>
+            <div class="course-card-body"><div class="course-meta">SENIOR PROGRAM <span>·</span> PHYSICS</div><h3>Physics, from first principles</h3><p>Make sense of motion, energy and electricity with real examples.</p><button class="course-link" type="button" data-course="physics1112">View course details <span aria-hidden="true">↗</span></button></div>
+          </article>
+          <article class="course-card" data-category="exam" data-search="jee foundations physics chemistry maths engineering entrance exam">
+            <div class="course-art tone-yellow"><span class="art-badge">Exam foundation</span><span class="art-symbol art-target" aria-hidden="true">◎</span></div>
+            <div class="course-card-body"><div class="course-meta">EXAM FOUNDATION <span>·</span> JEE</div><h3>Engineering exam foundations</h3><p>Organize key concepts and practice problem-solving at a steady pace.</p><button class="course-link" type="button" data-course="jee">View course details <span aria-hidden="true">↗</span></button></div>
+          </article>
+          <article class="course-card" data-category="exam" data-search="neet foundations biology chemistry physics medicine entrance exam">
+            <div class="course-art tone-pink"><span class="art-badge">Exam foundation</span><span class="art-symbol art-book" aria-hidden="true">✳</span></div>
+            <div class="course-card-body"><div class="course-meta">EXAM FOUNDATION <span>·</span> NEET</div><h3>Medical exam foundations</h3><p>Work through biology, chemistry and physics with a clear study routine.</p><button class="course-link" type="button" data-course="neet">View course details <span aria-hidden="true">↗</span></button></div>
+          </article>
+        </div>
+        <p class="empty-state" id="emptyCourses" hidden>No matching courses. Try another subject or category.</p>
+        <p class="small-note">Course names and descriptions are sample content for this website demonstration.</p>
+      </div>
+    </section>
+
+    <section class="section-spacing approach-section" id="approach" aria-labelledby="approachHeading">
+      <div class="wrap approach-layout">
+        <div class="approach-left">
+          <span class="section-kicker kicker-light">02 / OUR APPROACH</span>
+          <h2 id="approachHeading">A little structure.<br><span>A lot more clarity.</span></h2>
+          <p>Great learning isn't about cramming everything into one lesson. It's about understanding an idea, testing it, and knowing what to work on next.</p>
+          <div class="approach-poster" aria-hidden="true">
+            <div class="poster-grid"></div><span class="poster-round">✳</span><span class="poster-equation">a + b = <i>aha!</i></span><span class="poster-pen"></span><span class="poster-caption">MAKE SPACE FOR THE AHA MOMENTS</span>
+          </div>
+        </div>
+        <div class="approach-right">
+          <article class="step"><span class="step-index">01</span><div><h3>Understand the idea</h3><p>Break a topic into plain-language explanations and examples that connect.</p></div><span class="step-arrow" aria-hidden="true">↗</span></article>
+          <article class="step"><span class="step-index">02</span><div><h3>Try it yourself</h3><p>Apply what you've learned with short exercises and worked problems.</p></div><span class="step-arrow" aria-hidden="true">↗</span></article>
+          <article class="step"><span class="step-index">03</span><div><h3>Review and move forward</h3><p>Notice where you got stuck, ask questions and build on what you know.</p></div><span class="step-arrow" aria-hidden="true">↗</span></article>
+          <a href="#schedule" class="approach-link">Take a look at the weekly plan <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-spacing schedule-section" id="schedule" aria-labelledby="scheduleHeading">
+      <div class="wrap schedule-layout">
+        <div class="schedule-copy">
+          <span class="section-kicker">03 / A WEEK AT A GLANCE</span>
+          <h2 id="scheduleHeading">See how a week <span class="soft-italic">could look.</span></h2>
+          <p>A useful routine leaves space to learn, practise and check in. Switch between sample days to explore the format.</p>
+          <div class="schedule-disclaimer">Illustrative timetable only — not real class availability.</div>
+        </div>
+        <div class="schedule-board">
+          <div class="board-head"><span>EXAMPLE STUDY PLAN</span><span aria-hidden="true">✳</span></div>
+          <div class="day-tabs" id="dayTabs" role="group" aria-label="Choose sample schedule day">
+            <button type="button" class="day-tab active" data-day="mon" aria-pressed="true">Monday</button>
+            <button type="button" class="day-tab" data-day="wed" aria-pressed="false">Wednesday</button>
+            <button type="button" class="day-tab" data-day="sat" aria-pressed="false">Saturday</button>
+          </div>
+          <div class="lesson-preview" aria-live="polite">
+            <div class="lesson-time" id="lessonTime">4:00 – 5:00 PM</div>
+            <h3 id="lessonTitle">Build the concept</h3>
+            <p id="lessonDesc">Explore a new maths idea, then walk through a few examples together.</p>
+            <div class="lesson-tags" id="lessonTags"><span>Concepts</span><span>Worked examples</span></div>
+          </div>
+          <div class="board-foot"><span><span class="mini-dot"></span> Sample learning format</span><span id="lessonIndex">01 / 03</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-spacing faq-section" id="faq" aria-labelledby="faqHeading">
+      <div class="wrap faq-layout">
+        <div><span class="section-kicker">04 / QUESTIONS, ANSWERED</span><h2 id="faqHeading">Good questions <span class="soft-italic">welcome.</span></h2><p>Here's how a straightforward FAQ section can help visitors find answers without searching through multiple pages.</p></div>
+        <div class="faq-list">
+          <details><summary>How do I choose a course?<span aria-hidden="true">+</span></summary><p>Start by choosing a class group or an exam foundation. You can also use the course search to find a subject that matches your interests.</p></details>
+          <details><summary>What does a typical lesson include?<span aria-hidden="true">+</span></summary><p>A sample lesson structure includes explaining a concept, working through examples, independent practice and time for questions.</p></details>
+          <details><summary>Can I explore course details before enquiring?<span aria-hidden="true">+</span></summary><p>Yes. Select “View course details” on any course card to see a short summary and its example focus areas.</p></details>
+          <details><summary>Does this site accept real admissions?<span aria-hidden="true">+</span></summary><p>No. Apex Academy is a fictional portfolio concept. Forms, classes and timetables are demonstrations, not real services or admissions.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contactHeading">
+      <div class="wrap contact-layout">
+        <div class="contact-intro"><span class="section-kicker">05 / LET'S CONNECT</span><h2 id="contactHeading">A question is a <span class="soft-italic">great start.</span></h2><p>Try the sample enquiry interface to see how a simple academy website could guide new visitors toward the next step.</p><div class="concept-note"><span aria-hidden="true">ⓘ</span><span>Demo only: nothing you enter here is sent or stored.</span></div></div>
+        <form id="enquiryForm" class="enquiry-form">
+          <div class="form-head"><strong>Send a course enquiry</strong><span>DEMO FORM</span></div>
+          <label for="visitorName">Your name <span>*</span></label>
+          <input type="text" id="visitorName" name="name" placeholder="e.g. Alex" autocomplete="off" maxlength="80" required>
+          <label for="visitorCourse">Interested in <span>*</span></label>
+          <select id="visitorCourse" name="course" required><option value="">Choose a course</option><option>Mathematics, made clearer</option><option>Science in everyday life</option><option>Maths for the next level</option><option>Physics, from first principles</option><option>Engineering exam foundations</option><option>Medical exam foundations</option></select>
+          <label for="visitorMessage">Your question <span>*</span></label>
+          <textarea id="visitorMessage" name="message" rows="3" placeholder="What would you like to know?" required maxlength="500"></textarea>
+          <button class="btn btn-primary form-submit" type="submit">Preview enquiry <span class="round-arrow" aria-hidden="true">↗</span></button>
+          <p class="form-feedback" role="status" id="formFeedback">This interaction is for demonstration only.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-top"><a class="logo logo-footer" href="#top"><span class="logo-mark" aria-hidden="true">a<span class="logo-dot">.</span></span><span class="logo-type">apex<span>academy</span></span></a><p>A concept website created to demonstrate a welcoming, interactive learning experience.</p><a class="footer-top-link" href="#top">Back to top ↑</a></div>
+    <div class="wrap footer-bottom"><span>© <span id="year"></span> Apex Academy · Fictional website concept</span><a href="mailto:krish73a@gmail.com?subject=High%20Net%20Webstudio%20-%20Apex%20Academy%20demo">Created by High Net Webstudio ↗</a></div>
+  </footer>
+
+  <dialog id="courseDialog" class="course-dialog" aria-labelledby="dialogHeading">
+    <div class="dialog-inner"><button class="dialog-close" id="dialogClose" type="button" aria-label="Close course details">×</button><span class="section-kicker">COURSE OVERVIEW · SAMPLE</span><h2 id="dialogHeading"></h2><p id="dialogDescription"></p><p class="dialog-subhead">Topics you could explore</p><ul id="dialogTopics"></ul><div class="dialog-actions"><button type="button" class="btn btn-primary" id="askAboutCourse">Ask about this course <span aria-hidden="true">↗</span></button><button class="dialog-secondary" type="button" id="dialogDismiss">Back to courses</button></div><small>Concept demonstration. No real courses are offered through this page.</small></div>
+  </dialog>
+</body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FORGE Performance — Premium Fitness Website</title>
+  <meta name="description" content="FORGE Performance is a premium vintage-style fitness website demo with coaching, performance pathways, membership journeys, and an editorial atmosphere." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <script src="../../../demo-utils.js" defer></script>
+  <link rel="stylesheet" href="../../../demo-nav.css">
+<link rel="icon" type="image/svg+xml" href="../../../assets/favicon.svg">
+</head>
+<body data-page="home">
+  <div class="highnet-demo-back"><a href="../../../demos.html">← High Net Webstudio · All 9 demos</a><span>CONCEPT DEMO · FICTIONAL BUSINESS</span></div>
+  <div class="grain"></div>
+
+  <div class="announcement-bar">
+    <div class="container announcement-inner">
+      <span>Private coaching · Premium conditioning · Recovery-led performance</span>
+      <a href="join.html">Apply for membership ↗</a>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">F</span>
+        <span class="brand-block">
+          <strong>FORGE</strong>
+          <small>Performance Studio</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+
+      <nav class="site-nav" id="siteNav">
+        <a href="index.html" class="active">Home</a>
+        <a href="programs.html">Programs</a>
+        <a href="experience.html">Experience</a>
+        <a href="join.html">Membership</a>
+        <a href="join.html#contact" class="nav-cta">Book consultation</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-layout">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">PREMIUM PERFORMANCE CULTURE</p>
+          <h1>Vintage character. Modern training discipline.</h1>
+          <p class="lead">FORGE Performance is built like a premium studio: structured coaching, elegant presentation, and a quieter, stronger visual identity than a typical gym website.</p>
+
+          <div class="hero-actions">
+            <a href="join.html" class="btn btn-primary">Apply for membership</a>
+            <a href="programs.html" class="btn btn-outline">Explore training paths</a>
+          </div>
+
+          <div class="hero-stats">
+            <div>
+              <strong>1:1</strong>
+              <span>coaching direction</span>
+            </div>
+            <div>
+              <strong>4</strong>
+              <span>signature pathways</span>
+            </div>
+            <div>
+              <strong>12</strong>
+              <span>premium weekly sessions</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="editorial-frame main-frame">
+            <div class="frame-top">FOUNDATION SERIES</div>
+            <div class="frame-center">
+              <div class="plate-ring ring-one"></div>
+              <div class="plate-ring ring-two"></div>
+              <div class="forge-bar"></div>
+            </div>
+            <div class="frame-bottom">
+              <span>Strength · Conditioning · Recovery</span>
+            </div>
+          </div>
+
+          <div class="floating-note note-one">
+            <small>Coach-led</small>
+            <strong>Performance consultations</strong>
+          </div>
+
+          <div class="floating-note note-two">
+            <small>Signature method</small>
+            <strong>Lift · Move · Recover</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section manifesto-section">
+      <div class="container manifesto-grid">
+        <div class="manifesto-card reveal">
+          <p class="eyebrow">THE STUDIO MOOD</p>
+          <h2>A premium fitness website should feel deliberate, not loud.</h2>
+          <p>FORGE uses a warmer palette, serif headlines, subtle textures, and more curated spacing to feel closer to a private performance studio than a mass-market gym chain.</p>
+        </div>
+
+        <div class="value-stack reveal">
+          <article>
+            <h3>Focused coaching</h3>
+            <p>Goal-based direction for strength, physique, and longevity.</p>
+          </article>
+          <article>
+            <h3>Editorial atmosphere</h3>
+            <p>A refined brand presence with premium section pacing.</p>
+          </article>
+          <article>
+            <h3>Smarter recovery</h3>
+            <p>Mobility, conditioning, and recovery woven into performance plans.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section signature-section surface-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">SIGNATURE PATHWAYS</p>
+            <h2>Training shaped around intent.</h2>
+          </div>
+          <a href="programs.html" class="text-link">View full programs ↗</a>
+        </div>
+
+        <div class="signature-grid" id="homeProgramsGrid"></div>
+      </div>
+    </section>
+
+    <section class="section rhythm-section">
+      <div class="container rhythm-layout">
+        <div class="reveal">
+          <p class="eyebrow">WEEKLY RHYTHM</p>
+          <h2>The week feels curated, not crowded.</h2>
+          <p class="soft-text">Browse a simplified premium schedule with strength labs, recovery work, conditioning blocks, and performance sessions.</p>
+          <div class="day-switcher" id="daySwitcher"></div>
+        </div>
+
+        <div class="schedule-board reveal" id="scheduleBoard"></div>
+      </div>
+    </section>
+
+    <section class="section coaching-section surface-alt">
+      <div class="container coaching-layout">
+        <div class="coach-portrait reveal">
+          <div class="portrait-shell">
+            <div class="portrait-card">
+              <span class="portrait-kicker">Lead performance director</span>
+              <h3>Arjun Mehta</h3>
+              <p>Performance-focused coaching with a calm, premium delivery style built around strength quality, movement depth, and long-term progress.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="coach-copy reveal">
+          <p class="eyebrow">COACHING ETHOS</p>
+          <h2>Build strong bodies without noisy systems.</h2>
+          <p class="soft-text">The FORGE coaching style is measured and premium: enough energy to feel ambitious, enough structure to feel safe, and enough restraint to feel serious.</p>
+          <div class="feature-list">
+            <span>Private consultation flow</span>
+            <span>Technique-focused strength work</span>
+            <span>Conditioning with recovery balance</span>
+            <span>High-touch membership experience</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section membership-section">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">MEMBERSHIP</p>
+            <h2>Three premium ways to enter FORGE.</h2>
+          </div>
+        </div>
+
+        <div class="plan-grid">
+          <article class="plan-card reveal">
+            <span class="plan-tag">Studio Access</span>
+            <h3>Essential FORGE</h3>
+            <strong>₹3,999 / month</strong>
+            <p>Curated open training, assessment, and monthly program direction for self-driven members.</p>
+            <a href="join.html?plan=essential-forge" class="btn btn-outline small-btn">Apply for this plan</a>
+          </article>
+
+          <article class="plan-card featured reveal">
+            <span class="plan-tag">Most selected</span>
+            <h3>Performance Membership</h3>
+            <strong>₹6,999 / month</strong>
+            <p>Coach-guided training, small-group sessions, weekly check-ins, and movement-focused recovery.</p>
+            <a href="join.html?plan=performance-membership" class="btn btn-primary small-btn">Apply for this plan</a>
+          </article>
+
+          <article class="plan-card reveal">
+            <span class="plan-tag">Private Coaching</span>
+            <h3>Black Label Coaching</h3>
+            <strong>₹11,999 / month</strong>
+            <p>Premium one-to-one guidance, bespoke programming, direct coach contact, and elevated service.</p>
+            <a href="join.html?plan=black-label-coaching" class="btn btn-outline small-btn">Apply for this plan</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta-section">
+      <div class="container cta-card reveal">
+        <div>
+          <p class="eyebrow">BEGIN WITH A CONSULTATION</p>
+          <h2>Let the studio recommend the right path.</h2>
+          <p class="soft-text">Premium websites convert better when they reduce friction. FORGE guides visitors toward a membership conversation instead of overwhelming them.</p>
+        </div>
+        <div class="hero-actions vertical-mobile">
+          <a href="join.html" class="btn btn-primary">Start your application</a>
+          <a href="experience.html" class="btn btn-outline">See the studio experience</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand footer-brand">
+          <span class="brand-mark">F</span>
+          <span class="brand-block">
+            <strong>FORGE</strong>
+            <small>Performance Studio</small>
+          </span>
+        </div>
+        <p>Premium fitness demo created for High Net Webstudio.</p>
+      </div>
+
+      <div>
+        <h4>Visit</h4>
+        <p>8 Heritage Lane, Central District</p>
+        <p>Mon–Sat · 6:00 AM – 9:00 PM</p>
+      </div>
+
+      <div>
+        <h4>Explore</h4>
+        <a href="programs.html">Programs</a>
+        <a href="experience.html">Experience</a>
+        <a href="join.html">Membership</a>
+      </div>
+    </div>
+
+    <div class="container footer-note">
+      <span>© <span id="year"></span> FORGE Performance</span>
+      <span>Fictional premium website demo for portfolio use.</span>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Join Momentum Fitness</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <script src="../../../demo-utils.js" defer></script>
+  <link rel="stylesheet" href="../../../demo-nav.css">
+<link rel="icon" type="image/svg+xml" href="../../../assets/favicon.svg">
+</head>
+<body data-page="join">
+  <div class="highnet-demo-back"><a href="../../../demos.html">← High Net Webstudio · All 9 demos</a><span>CONCEPT DEMO · FICTIONAL BUSINESS</span></div>
+  <div class="topbar"><div class="container topbar-inner"><span>Trial sessions · Membership options · Coaching support</span><a href="#joinForm">Choose your plan ↗</a></div></div>
+  <header class="site-header"><div class="container nav-wrap"><a href="index.html" class="brand"><span class="brand-mark">M</span><span class="brand-text">Momentum Fitness</span></a><button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button><nav class="site-nav" id="siteNav"><a href="index.html">Home</a><a href="programs.html">Programs</a><a href="join.html" class="active">Membership</a><a href="#contact">Contact</a><a href="#joinForm" class="nav-cta">Join now</a></nav></div></header>
+  <main>
+    <section class="page-hero">
+      <div class="container reveal">
+        <p class="eyebrow">START YOUR JOURNEY</p>
+        <h1>Choose a membership and preview your enquiry.</h1>
+        <p>Visitors can select a plan, request a call back, and ask about classes or coaching — without leaving the site.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container join-layout">
+        <form class="join-form reveal" id="joinForm">
+          <div class="form-head">
+            <h3>Membership enquiry</h3>
+            <p>This is a frontend demo. It previews the enquiry but does not submit to a real CRM or email inbox.</p>
+          </div>
+          <div class="form-grid">
+            <label><span>Name</span><input type="text" id="memberName" required placeholder="Your full name" /></label>
+            <label><span>Email</span><input type="email" id="memberEmail" required placeholder="name@example.com" /></label>
+            <label><span>Phone</span><input type="tel" id="memberPhone" required placeholder="+91 98765 43210" /></label>
+            <label><span>Preferred plan</span><select id="preferredPlan"><option value="Gym Access">Gym Access</option><option value="Classes + Gym">Classes + Gym</option><option value="Elite Coaching">Elite Coaching</option></select></label>
+          </div>
+          <div class="form-grid">
+            <label><span>Main goal</span><select id="mainGoal"><option>Build strength</option><option>Lose fat</option><option>Improve cardio</option><option>Mobility & recovery</option><option>General fitness</option></select></label>
+            <label><span>Preferred start</span><select id="startTime"><option>This week</option><option>Next week</option><option>This month</option><option>Just exploring</option></select></label>
+          </div>
+          <label><span>Anything we should know?</span><textarea id="memberNotes" rows="4" placeholder="Training history, injuries, preferred class time, questions..."></textarea></label>
+          <div class="form-actions spaced-actions">
+            <button class="btn btn-primary" type="submit">Preview enquiry</button>
+            <a href="#contact" class="btn btn-outline">Contact the team</a>
+          </div>
+        </form>
+
+        <aside class="join-side reveal">
+          <div class="info-panel">
+            <p class="eyebrow">WHAT YOU GET</p>
+            <h3>Built-in support from day one.</h3>
+            <ul>
+              <li>Starter consultation and walkthrough</li>
+              <li>Goal-based class suggestions</li>
+              <li>Structured membership options</li>
+              <li>Progress-oriented coaching feel</li>
+            </ul>
+          </div>
+          <div class="info-panel" id="contact">
+            <p class="eyebrow">CONTACT</p>
+            <h3>Talk to Momentum</h3>
+            <p>21 Active Street, Central District</p>
+            <p>+91 98765 43110</p>
+            <p>hello@momentumfitness.demo</p>
+            <p>Mon–Sat · 6:00 AM – 10:00 PM</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal" id="enquiryModal" role="dialog" aria-modal="true" aria-label="Membership enquiry preview" hidden>
+    <div class="modal-backdrop" data-close-enquiry></div>
+    <div class="modal-card">
+      <button class="modal-close" aria-label="Close dialog" data-close-enquiry type="button">×</button>
+      <p class="eyebrow">ENQUIRY PREVIEW</p>
+      <h3>Momentum membership request</h3>
+      <div class="summary-list" id="enquirySummary"></div>
+    </div>
+  </div>
+
+  <footer class="site-footer"><div class="container footer-grid"><div><div class="brand footer-brand"><span class="brand-mark">M</span><span class="brand-text">Momentum Fitness</span></div><p>Advanced gym demo created for High Net Webstudio.</p></div><div><h4>Visit</h4><p>21 Active Street, Central District</p><p>Mon–Sat · 6:00 AM – 10:00 PM</p></div><div><h4>Explore</h4><a href="programs.html">Programs</a><a href="#contact">Contact</a></div></div><div class="container footer-note"><span>© <span id="year"></span> Momentum Fitness</span><span>Fictional demo website for portfolio use.</span></div></footer>
+</body>
+</html>

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="#f9f7ef" name="theme-color"/>
+  <meta content="Discover and compare sample school subjects, entrance prep and creative skills at Elevate Learning." name="description"/>
+  <title>
+   Explore Programs | Elevate Learning
+  </title>
+  <link href="assets/elevate-mark.svg" rel="icon" type="image/svg+xml"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&amp;family=Fraunces:opsz,wght,SOFT,WONK@9..144,500,10,1;9..144,600,10,1;9..144,700,10,1&amp;display=swap" rel="stylesheet"/>
+  <link href="style.css" rel="stylesheet"/>
+  <script defer="" src="script.js">
+  </script>
+   <script src="../../../demo-utils.js" defer></script>
+  <link rel="stylesheet" href="../../../demo-nav.css">
+</head>
+ <body data-page="courses" id="top">
+  <div class="highnet-demo-back"><a href="../../../demos.html">← High Net Webstudio · All 9 demos</a><span>CONCEPT DEMO · FICTIONAL BUSINESS</span></div>
+  <a class="skip-link" href="#main">
+   Skip to main content
+  </a>
+  <div aria-hidden="true" class="scroll-indicator" id="scrollIndicator">
+  </div>
+  <header class="site-header" id="siteHeader">
+   <div class="top-notice">
+    <div class="container">
+     <span>
+      <span class="dot">
+      </span>
+      New to Elevate? Explore our learning pathways.
+     </span>
+     <a href="admissions.html">
+      How admissions work
+      <span aria-hidden="true">
+       &nearrow;
+      </span>
+     </a>
+    </div>
+   </div>
+   <nav aria-label="Primary navigation" class="container nav">
+    <a aria-label="Elevate Learning, homepage" class="brand" href="index.html">
+     <img alt="" height="46" src="assets/elevate-mark.svg" width="46"/>
+     <span>
+      elevate
+      <span class="brand-line">
+       learning
+       <span class="spark">
+        ✳
+       </span>
+      </span>
+     </span>
+    </a>
+    <div class="nav-links" id="navLinks">
+     <a href="index.html">
+      Home
+     </a>
+     <a aria-current="page" href="courses.html">
+      Programs
+     </a>
+     <a href="approach.html">
+      Our approach
+     </a>
+     <a href="admissions.html">
+      Admissions
+     </a>
+    </div>
+    <div class="nav-actions">
+     <a class="nav-cta" href="admissions.html">
+      Let's talk
+      <span aria-hidden="true">
+       &nearrow;
+      </span>
+     </a>
+     <button aria-controls="navLinks" aria-expanded="false" aria-label="Open menu" class="menu-toggle" id="menuToggle" type="button">
+      <span>
+      </span>
+      <span>
+      </span>
+     </button>
+    </div>
+   </nav>
+  </header>
+  <main id="main">
+   <section class="page-banner courses-banner">
+    <div class="container page-banner-inner">
+     <p class="eyebrow">
+      <span class="eyebrow-line">
+      </span>
+      Find your next step
+     </p>
+     <h1>
+      Courses made for
+      <br/>
+      <em>
+       curious people.
+      </em>
+     </h1>
+     <p>
+      Explore subjects, narrow down your options and compare two learning paths before deciding what suits you.
+     </p>
+     <span aria-hidden="true" class="banner-shape">
+      ✳
+     </span>
+    </div>
+   </section>
+   <section class="section catalog-section">
+    <div class="container">
+     <div class="section-head compact">
+      <div>
+       <p class="kicker">
+        THE COURSE FINDER
+       </p>
+       <h2>
+        A place to
+        <em>
+         begin.
+        </em>
+       </h2>
+      </div>
+      <p aria-live="polite" class="catalog-count" id="catalogCount">
+       6 programs
+      </p>
+     </div>
+     <div class="catalog-toolbar">
+      <label class="search-wrap">
+       <span class="sr-only">
+        Search programs
+       </span>
+       <span aria-hidden="true">
+        &telrec;
+       </span>
+       <input autocomplete="off" id="courseSearch" placeholder="Search a subject or topic&hellip;" type="search"/>
+      </label>
+      <label class="sort-wrap">
+       Sort by
+       <select id="sortCourses">
+        <option value="recommended">
+         Recommended
+        </option>
+        <option value="az">
+         Name A&ndash;Z
+        </option>
+        <option value="hours">
+         Weekly sessions
+        </option>
+       </select>
+      </label>
+     </div>
+     <div aria-label="Course categories" class="category-chips" role="group">
+      <button aria-pressed="true" class="chip selected" data-category="all" type="button">
+       All programs
+      </button>
+      <button aria-pressed="false" class="chip" data-category="school" type="button">
+       School subjects
+      </button>
+      <button aria-pressed="false" class="chip" data-category="entrance" type="button">
+       Entrance prep
+      </button>
+      <button aria-pressed="false" class="chip" data-category="skills" type="button">
+       Creative skills
+      </button>
+     </div>
+     <div class="course-grid" id="courseGrid">
+     </div>
+     <div class="catalog-empty" hidden="" id="catalogEmpty">
+      <h3>
+       Nothing quite matches.
+      </h3>
+      <p>
+       Try a different search or select another category.
+      </p>
+      <button class="btn btn-teal" id="clearCourseFilters" type="button">
+       Reset filters &nearrow;
+      </button>
+     </div>
+     <div class="compare-dock" hidden="" id="compareDock">
+      <div>
+       <span class="mini-label">
+        YOUR SHORTLIST
+       </span>
+       <strong id="compareLabel">
+        0 selected
+       </strong>
+       <p>
+        Choose up to two courses.
+       </p>
+      </div>
+      <div class="dock-actions">
+       <button class="text-link" id="clearCompare" type="button">
+        Clear
+       </button>
+       <button class="btn btn-teal" disabled="" id="openCompare" type="button">
+        Compare courses &nearrow;
+       </button>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="container catalog-help">
+    <div>
+     <span>
+      NOT SURE WHERE TO START?
+     </span>
+     <h2>
+      That's completely okay.
+     </h2>
+     <p>
+      Our sample admissions journey helps you find the next step without pressure.
+     </p>
+    </div>
+    <a class="btn btn-teal" href="admissions.html">
+     See how it works &nearrow;
+    </a>
+   </section>
+   <dialog aria-labelledby="dialogTitle" class="course-dialog" id="courseDialog">
+    <button aria-label="Close course details" class="dialog-close" id="closeCourseDialog" type="button">
+     &times;
+    </button>
+    <div class="dialog-card-top" id="dialogTop">
+     <span id="dialogCategory">
+     </span>
+     <span class="dialog-bloom">
+      ✳
+     </span>
+    </div>
+    <div class="dialog-card-body">
+     <p class="kicker">
+      PROGRAM DETAILS
+     </p>
+     <h2 id="dialogTitle">
+     </h2>
+     <p id="dialogSummary">
+     </p>
+     <div class="dialog-details">
+      <div>
+       <span>
+        GOOD FOR
+       </span>
+       <strong id="dialogAudience">
+       </strong>
+      </div>
+      <div>
+       <span>
+        WEEKLY RHYTHM
+       </span>
+       <strong id="dialogSessions">
+       </strong>
+      </div>
+      <div>
+       <span>
+        WHAT YOU'LL EXPLORE
+       </span>
+       <strong id="dialogTopics">
+       </strong>
+      </div>
+     </div>
+     <a class="btn btn-teal" href="admissions.html" id="courseEnquire">
+      Ask about this program &nearrow;
+     </a>
+    </div>
+   </dialog>
+   <dialog aria-labelledby="compareTitle" class="compare-dialog" id="compareDialog">
+    <button aria-label="Close comparison" class="dialog-close" id="closeCompareDialog" type="button">
+     &times;
+    </button>
+    <div class="compare-modal-inner">
+     <p class="kicker">
+      SIDE BY SIDE
+     </p>
+     <h2 id="compareTitle">
+      Your course comparison
+     </h2>
+     <div class="compare-columns" id="compareColumns">
+     </div>
+     <p class="demo-small">
+      This is an illustrative comparison using sample program information.
+     </p>
+    </div>
+   </dialog>
+  </main>
+  <footer class="site-footer">
+   <div class="container footer-head">
+    <div class="footer-wordmark">
+     elevate
+     <span>
+      .
+     </span>
+    </div>
+    <div class="footer-note">
+     Learning is a journey.
+     <br/>
+     Let's make it a good one.
+    </div>
+    <a class="btn btn-cream" href="admissions.html">
+     Explore admissions
+     <span>
+      &nearrow;
+     </span>
+    </a>
+   </div>
+   <div class="container footer-base">
+    <span>
+     &copy;
+     <span id="year">
+     </span>
+     Elevate Learning
+    </span>
+    <span>
+     Fictional academy concept by High Net Webstudio &middot; No real admissions are processed.
+    </span>
+    <a class="studio-back" hidden="" href="../../../index.html" id="studioBack">
+     &larr; High Net Webstudio
+    </a>
+    <a href="#top">
+     Back to top &uarr;
+    </a>
+   </div>
+  </footer>
+ </body>
+</html>
+
