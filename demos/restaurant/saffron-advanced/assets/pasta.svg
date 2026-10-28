@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 460" role="img" aria-label="Illustration of creamy pasta bowl"><defs>
+<radialGradient id="bg"><stop stop-color="#efe1c8"/><stop offset="1" stop-color="#d7b78d"/></radialGradient>
+<linearGradient id="cup" x2="1" y2="1"><stop stop-color="#fff9ef"/><stop offset=".56" stop-color="#e8d4b7"/><stop offset="1" stop-color="#cda67e"/></linearGradient>
+<radialGradient id="brew"><stop stop-color="#a36337"/><stop offset="1" stop-color="#57331f"/></radialGradient>
+<linearGradient id="bread"><stop stop-color="#eeb96e"/><stop offset=".6" stop-color="#bf7841"/><stop offset="1" stop-color="#8b4a28"/></linearGradient>
+<filter id="shadow"><feGaussianBlur stdDeviation="16"/></filter></defs>
+<rect width="600" height="460" rx="24" fill="url(#bg)"/>
+<circle cx="540" cy="65" r="110" fill="#ffffff" opacity=".18"/><circle cx="75" cy="395" r="125" fill="#ffffff" opacity=".13"/>
+<ellipse cx="300" cy="365" rx="198" ry="27" fill="#574f31" opacity=".17" filter="url(#shadow)"/><ellipse cx="302" cy="316" rx="198" ry="76" fill="#f8f1df" stroke="#cabfa4" stroke-width="8"/><ellipse cx="302" cy="306" rx="146" ry="48" fill="#e0ac5d"/>
+<g fill="none" stroke="#f3d392" stroke-width="15" stroke-linecap="round"><path d="M180 311q41-66 95 0t105-13"/><path d="M195 289q64 50 116-6t107 29"/><path d="M205 322q50-46 101 0t87-23"/></g><g fill="#66834b"><ellipse cx="250" cy="278" rx="20" ry="10" transform="rotate(35 250 278)"/><ellipse cx="347" cy="314" rx="20" ry="10" transform="rotate(-25 347 314)"/></g>
+</svg>

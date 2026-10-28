@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Illustrated Ember House dinner scene">
+<defs>
+  <linearGradient id="wood" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#241911"/><stop offset=".45" stop-color="#3e281c"/><stop offset="1" stop-color="#140d0a"/></linearGradient>
+  <radialGradient id="lamp"><stop stop-color="#b7874c" stop-opacity=".45"/><stop offset="1" stop-color="#b7874c" stop-opacity="0"/></radialGradient>
+  <linearGradient id="steak" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#a75a34"/><stop offset=".52" stop-color="#754022"/><stop offset="1" stop-color="#3c1d15"/></linearGradient>
+  <radialGradient id="plate"><stop stop-color="#fffaf0"/><stop offset=".8" stop-color="#e6d9c6"/><stop offset="1" stop-color="#bbaa8e"/></radialGradient>
+  <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="27"/></filter>
+  <filter id="glow"><feGaussianBlur stdDeviation="4"/></filter>
+</defs>
+<rect width="1600" height="900" fill="url(#wood)"/>
+<g opacity=".3" stroke="#ad8756" stroke-width="3"><path d="M0 132H1600M0 385H1600M0 623H1600M0 853H1600"/><path d="M333 0V385M993 385V853M1355 0V623"/></g>
+<ellipse cx="1120" cy="375" rx="720" ry="590" fill="url(#lamp)"/>
+<ellipse cx="1150" cy="515" rx="402" ry="289" fill="#080604" opacity=".58" filter="url(#shadow)"/>
+<ellipse cx="1135" cy="453" rx="370" ry="269" fill="url(#plate)" stroke="#d6c6aa" stroke-width="9"/>
+<ellipse cx="1135" cy="453" rx="330" ry="226" fill="#f6eddc" stroke="#d7c7b1" stroke-width="4"/>
+<ellipse cx="1135" cy="453" rx="289" ry="189" fill="none" stroke="#e5d6bb" stroke-width="4"/>
+<g transform="rotate(-7 1160 475)">
+  <path d="M1004 382Q1040 312 1157 320Q1305 310 1349 416Q1360 508 1297 565Q1230 628 1082 590Q977 570 958 482Q944 427 1004 382Z" fill="url(#steak)" stroke="#432015" stroke-width="15"/>
+  <path d="M991 423Q1038 354 1148 359Q1230 346 1301 401" fill="none" stroke="#c17f4b" stroke-width="12" opacity=".58" stroke-linecap="round"/>
+  <path d="M1014 468L1119 530M1035 417L1157 479M1151 378L1278 455M1197 507L1300 556M1070 552L1148 592" stroke="#34180e" stroke-width="17" opacity=".5" stroke-linecap="round"/>
+  <path d="M989 491Q1112 602 1274 556" fill="none" stroke="#de9657" stroke-width="8" opacity=".36" stroke-linecap="round"/>
+</g>
+<g fill="none" stroke-linecap="round">
+  <path d="M925 379Q874 336 854 361M918 397Q868 406 847 451M938 342Q901 318 898 292" stroke="#6b7b48" stroke-width="14"/>
+  <path d="M1350 508Q1415 480 1424 430M1362 533Q1414 557 1435 544" stroke="#67754b" stroke-width="13"/>
+</g>
+<ellipse cx="1214" cy="700" rx="110" ry="34" fill="#9b552a" opacity=".4" filter="url(#glow)"/>
+<g opacity=".6"><circle cx="882" cy="508" r="8" fill="#ad8848"/><circle cx="908" cy="528" r="5" fill="#ad8848"/><circle cx="1369" cy="357" r="7" fill="#ad8848"/></g>
+</svg>

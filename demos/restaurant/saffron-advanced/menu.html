@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f8f3eb">
+<meta name="description" content="Saffron & Stone — a warm cafe and kitchen concept. Explore the menu, discover our space and preview a table request.">
+<title>Explore the Menu | Saffron & Stone</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"><script src="script.js" defer></script>
+  <script src="../../../demo-utils.js" defer></script>
+  <link rel="stylesheet" href="../../../demo-nav.css">
+<link rel="icon" type="image/svg+xml" href="../../../assets/favicon.svg">
+</head>
+<body data-page="menu">
+  <div class="highnet-demo-back"><a href="../../../demos.html">← High Net Webstudio · All 9 demos</a><span>CONCEPT DEMO · FICTIONAL BUSINESS</span></div>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="concept-ribbon">A HIGH NET WEBSTUDIO CONCEPT <span>·</span> FICTITIOUS RESTAURANT DEMO</div>
+<header class="site-header" id="siteHeader"><nav class="nav wrap" aria-label="Main navigation">
+<a class="brand" href="index.html" aria-label="Saffron and Stone home"><span class="brand-mark" aria-hidden="true">S<span>&</span>S</span><span class="brand-word">SAFFRON <em>&</em> STONE<small>THE NEIGHBOURHOOD TABLE</small></span></a>
+<button class="menu-toggle" type="button" id="menuToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="mainNav"><span></span><span></span><span></span></button>
+<div class="nav-links" id="mainNav"><a href="index.html" >Home</a><a href="menu.html" aria-current="page">The menu</a><a href="index.html#story">Our story</a><a href="visit.html" >Visit & contact</a><a class="nav-book" href="visit.html#reserve">Book a seat <span aria-hidden="true">↗</span></a></div>
+</nav></header>
+<main id="main"><section class="page-intro menu-intro"><div class="wrap intro-grid"><div><p class="eyebrow">THE SAFFRON & STONE MENU</p><h1>Something good<br><em>for every mood.</em></h1><p>From the first coffee of the day to a plate you share slowly, find your next favourite here.</p></div><div class="page-intro-art"><img src="assets/pastry.svg" alt="Illustration of a golden croissant"></div></div></section>
+<section class="section menu-section"><div class="wrap"><div class="menu-toolbar"><div class="menu-toolbar-heading"><p class="eyebrow">MADE FOR YOUR MOMENT</p><h2>Explore the <em>menu.</em></h2></div><div class="menu-tools"><label class="search-field" for="menuSearch"><span aria-hidden="true">⌕</span><input type="search" id="menuSearch" placeholder="Search coffee, toast, dessert…" autocomplete="off"></label><label class="veg-toggle"><input id="vegOnly" type="checkbox"><span>Vegetarian only</span></label></div></div><div class="categories" role="group" aria-label="Menu categories" id="menuCategories"><button class="category active" data-category="all" aria-pressed="true">Everything</button><button class="category" data-category="coffee" aria-pressed="false">Coffee & more</button><button class="category" data-category="cold" aria-pressed="false">Cold drinks</button><button class="category" data-category="breakfast" aria-pressed="false">Breakfast</button><button class="category" data-category="plates" aria-pressed="false">Plates & bites</button><button class="category" data-category="bakery" aria-pressed="false">From the oven</button></div><div class="menu-meta"><span id="menuCount" role="status">Loading menu…</span><span>ALL PRICES IN INR · ILLUSTRATIVE</span></div><div class="menu-grid" id="menuGrid"></div><div class="empty-state" id="menuEmpty" hidden><h3>Nothing in the cup just yet.</h3><p>Try another search or change your filters.</p><button class="button button-dark" id="menuReset">Show everything ↗</button></div><p class="menu-disclaimer">Menu names, ingredients, allergens and prices are fictional demonstration data. For an actual restaurant, verify all dietary and allergen information before publishing.</p></div></section><section class="menu-end"><div class="wrap menu-end-inner"><div><p class="eyebrow">THE REST OF THE EXPERIENCE</p><h2>Found something you love?</h2></div><a class="button button-cream" href="visit.html#reserve">Book a seat <span>↗</span></a></div></section></main>
+<dialog id="dishDialog" aria-label="Dish details" class="modal"><button type="button" class="modal-close" data-close-dialog aria-label="Close dish details">×</button><div id="dishDialogContent"></div></dialog>
+<footer class="footer"><div class="wrap footer-top"><div><a class="brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true">S<span>&</span>S</span><span class="brand-word">SAFFRON <em>&</em> STONE<small>GOOD THINGS TAKE TIME</small></span></a><p>Made for conversations that last longer than the coffee.</p></div><div class="footer-links"><a href="menu.html">The menu ↗</a><a href="visit.html#reserve">Book a seat ↗</a><a href="visit.html">Visit & contact ↗</a></div><div class="footer-note">Fictional concept website by<br><strong>High Net Webstudio</strong><br><span>Addresses, offerings and hours are illustrative.</span></div></div><div class="wrap footer-bottom"><span>© <span id="year"></span> Saffron & Stone. Concept only.</span><button type="button" class="plain-button" id="replayIntro">Replay coffee intro ↻</button><a href="#main">Back to top ↑</a></div></footer>
+</body></html>

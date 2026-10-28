@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 460" role="img" aria-label="Illustration of a golden croissant on a plate"><defs>
+<radialGradient id="bg"><stop stop-color="#f3dfc0"/><stop offset="1" stop-color="#d6b38e"/></radialGradient>
+<linearGradient id="cup" x2="1" y2="1"><stop stop-color="#fff9ef"/><stop offset=".56" stop-color="#e8d4b7"/><stop offset="1" stop-color="#cda67e"/></linearGradient>
+<radialGradient id="brew"><stop stop-color="#a36337"/><stop offset="1" stop-color="#57331f"/></radialGradient>
+<linearGradient id="bread"><stop stop-color="#eeb96e"/><stop offset=".6" stop-color="#bf7841"/><stop offset="1" stop-color="#8b4a28"/></linearGradient>
+<filter id="shadow"><feGaussianBlur stdDeviation="16"/></filter></defs>
+<rect width="600" height="460" rx="24" fill="url(#bg)"/>
+<circle cx="540" cy="65" r="110" fill="#ffffff" opacity=".18"/><circle cx="75" cy="395" r="125" fill="#ffffff" opacity=".13"/>
+<ellipse cx="305" cy="360" rx="210" ry="36" fill="#81492c" opacity=".2" filter="url(#shadow)"/>
+<ellipse cx="305" cy="329" rx="210" ry="75" fill="#f8f0df" stroke="#c6ad90" stroke-width="7"/>
+<path d="M142 296c14-90 70-135 162-121 78-22 143 27 160 116-70 3-97-12-128-45-32 23-78 27-109 0-19 35-44 46-85 50z" fill="url(#bread)" stroke="#95502b" stroke-width="7"/>
+<path d="M218 195c-38 32-48 64-49 90M288 175c-36 36-40 78-29 114M357 184c-25 34-24 65-11 96M410 215c-11 34-10 45-4 68" stroke="#f9d49a" stroke-width="19" stroke-linecap="round" fill="none" opacity=".7"/>
+</svg>

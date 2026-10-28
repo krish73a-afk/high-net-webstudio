@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 460" role="img" aria-label="Illustrated intimate cafe corner"><defs>
+<radialGradient id="bg"><stop stop-color="#e7d8bf"/><stop offset="1" stop-color="#ceb095"/></radialGradient>
+<linearGradient id="cup" x2="1" y2="1"><stop stop-color="#fff9ef"/><stop offset=".56" stop-color="#e8d4b7"/><stop offset="1" stop-color="#cda67e"/></linearGradient>
+<radialGradient id="brew"><stop stop-color="#a36337"/><stop offset="1" stop-color="#57331f"/></radialGradient>
+<linearGradient id="bread"><stop stop-color="#eeb96e"/><stop offset=".6" stop-color="#bf7841"/><stop offset="1" stop-color="#8b4a28"/></linearGradient>
+<filter id="shadow"><feGaussianBlur stdDeviation="16"/></filter></defs>
+<rect width="600" height="460" rx="24" fill="url(#bg)"/>
+<circle cx="540" cy="65" r="110" fill="#ffffff" opacity=".18"/><circle cx="75" cy="395" r="125" fill="#ffffff" opacity=".13"/>
+<rect x="55" y="58" width="490" height="344" rx="15" fill="#f8eee0"/><rect x="70" y="80" width="460" height="200" fill="#f1dfcb"/><path d="M73 96h454M73 163h454M73 231h454" stroke="#e0c6a8" stroke-width="3"/>
+<rect x="124" y="110" width="110" height="150" rx="55" fill="#bac5a3" stroke="#967c60" stroke-width="10"/><rect x="370" y="105" width="110" height="155" rx="55" fill="#bac5a3" stroke="#967c60" stroke-width="10"/>
+<rect x="55" y="281" width="490" height="121" fill="#a77558"/><path d="M65 350h470" stroke="#946046" stroke-width="5"/>
+<path d="M150 383V298h290v85" fill="none" stroke="#4d4e3b" stroke-width="20" stroke-linecap="round"/><ellipse cx="300" cy="293" rx="172" ry="24" fill="#6e513d"/>
+<path d="M295 277v-55" stroke="#4c5741" stroke-width="4"/><path d="M297 225q-45-30-33-54m33 54q38-33 40-53" stroke="#79976e" stroke-width="18" fill="none" stroke-linecap="round"/>
+<path d="M285 275h25l9-28h-44z" fill="#b67654"/>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 460" role="img" aria-label="Illustration of avocado toast"><defs>
+<radialGradient id="bg"><stop stop-color="#ece9cb"/><stop offset="1" stop-color="#cfd7b5"/></radialGradient>
+<linearGradient id="cup" x2="1" y2="1"><stop stop-color="#fff9ef"/><stop offset=".56" stop-color="#e8d4b7"/><stop offset="1" stop-color="#cda67e"/></linearGradient>
+<radialGradient id="brew"><stop stop-color="#a36337"/><stop offset="1" stop-color="#57331f"/></radialGradient>
+<linearGradient id="bread"><stop stop-color="#eeb96e"/><stop offset=".6" stop-color="#bf7841"/><stop offset="1" stop-color="#8b4a28"/></linearGradient>
+<filter id="shadow"><feGaussianBlur stdDeviation="16"/></filter></defs>
+<rect width="600" height="460" rx="24" fill="url(#bg)"/>
+<circle cx="540" cy="65" r="110" fill="#ffffff" opacity=".18"/><circle cx="75" cy="395" r="125" fill="#ffffff" opacity=".13"/>
+<ellipse cx="298" cy="362" rx="197" ry="31" fill="#524b33" opacity=".16" filter="url(#shadow)"/><ellipse cx="296" cy="327" rx="202" ry="80" fill="#f1efe5" stroke="#c6c9ae" stroke-width="8"/>
+<rect x="151" y="151" width="290" height="191" rx="57" fill="#c88b48" transform="rotate(-9 290 230)" stroke="#84512d" stroke-width="7"/>
+<rect x="170" y="172" width="255" height="155" rx="44" fill="#edd39a" transform="rotate(-9 290 230)"/>
+<path d="M198 241q80-78 160-5 53 55-16 64-98 23-144-59" fill="#78a66d" stroke="#4b774e" stroke-width="9"/>
+<ellipse cx="288" cy="239" rx="55" ry="36" fill="#a8c787" transform="rotate(-14 288 239)"/><g fill="#cfe4a1"><circle cx="237" cy="223" r="10"/><circle cx="319" cy="269" r="12"/><circle cx="351" cy="210" r="8"/></g>
+</svg>

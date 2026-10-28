@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ember House — Fine Dining & Chef's Table</title>
+  <meta name="description" content="Ember House is a vintage-inspired premium dining experience with chef-led tasting menus, elegant reservations, and refined hospitality.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <script src="../../../demo-utils.js" defer></script>
+  <link rel="stylesheet" href="../../../demo-nav.css">
+<link rel="icon" type="image/svg+xml" href="../../../assets/favicon.svg">
+</head>
+<body data-page="home">
+  <div class="highnet-demo-back"><a href="../../../demos.html">← High Net Webstudio · All 9 demos</a><span>CONCEPT DEMO · FICTIONAL BUSINESS</span></div>
+  <div class="site-shell">
+    <div class="topbar">
+      <div class="container topbar-inner">
+        <span>Chef's Table · Heritage Grill · Private Dining</span>
+        <a href="reservations.html">Reserve a Seat ↗</a>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">EH</span>
+          <span class="brand-text">EMBER HOUSE</span>
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-label="Open menu">
+          <span></span><span></span>
+        </button>
+        <nav class="site-nav" id="siteNav">
+          <a href="index.html" class="active">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="experience.html">Experience</a>
+          <a href="reservations.html">Reservations</a>
+          <a href="reservations.html#contact">Contact</a>
+          <a href="reservations.html" class="nav-cta">Book a Seat</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero premium-hero">
+        <div class="hero-media">
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1600&q=80" alt="Premium plated beef dish at Ember House">
+          <div class="hero-overlay"></div>
+        </div>
+        <div class="container hero-content hero-entrance">
+          <div class="opening-signature" aria-label="Ember House, an invitation to dine">
+            <span class="opening-seal" aria-hidden="true">EH</span>
+            <span class="opening-filigree" aria-hidden="true"></span>
+            <span class="opening-signature-label">EMBER HOUSE · AN INVITATION TO DINE</span>
+          </div>
+          <p class="eyebrow">VINTAGE · PREMIUM · FIRE-LED</p>
+          <h2>The art of slow dining, plated with intention.</h2>
+          <p class="hero-text">Ember House combines old-world hospitality with chef-driven cuisine, fine cuts, slow-roasted signatures, a cellar-led pairing list, and an atmosphere designed for memorable evenings.</p>
+          <div class="hero-actions">
+            <a href="reservations.html" class="btn btn-primary">Reserve a Table</a>
+            <a href="menu.html" class="btn btn-outline">Explore the Menu</a>
+          </div>
+          <div class="hero-stats">
+            <div><strong>24</strong><span>Curated menu dishes</span></div>
+            <div><strong>5</strong><span>Tasting routes</span></div>
+            <div><strong>12–11PM</strong><span>Daily service</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section story-section">
+        <div class="container split-grid">
+          <div class="reveal">
+            <p class="eyebrow">OUR SIGNATURE</p>
+            <h3>Where vintage warmth meets a modern five-star table.</h3>
+            <p>Inspired by classic steak houses and old hotel dining rooms, Ember House brings together brass accents, dim amber lighting, white-cloth service, and a menu that balances charcoal-grilled cuts, handmade pasta, ocean specials, and refined desserts.</p>
+            <div class="story-points">
+              <div><span>Chef's Table</span><p>A front-row counter for a guided, multi-course evening.</p></div>
+              <div><span>Private Dining</span><p>Separate spaces for celebrations, corporate dinners and tasting nights.</p></div>
+              <div><span>Curated Pairings</span><p>Wines, mocktails and cellar selections matched to each course.</p></div>
+            </div>
+          </div>
+          <div class="image-stack reveal">
+            <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1000&q=80" alt="Elegant restaurant interior with warm vintage lighting">
+            <div class="floating-card">
+              <span>Chef recommended</span>
+              <strong>Woodfire Tenderloin</strong>
+              <p>With pepper jus and roasted garlic mash.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section featured-menu luxury-panel">
+        <div class="container">
+          <div class="section-head reveal">
+            <div>
+              <p class="eyebrow">FEATURED SELECTIONS</p>
+              <h3>A preview of tonight's table.</h3>
+            </div>
+            <a href="menu.html" class="text-link">See all dishes ↗</a>
+          </div>
+          <div class="featured-grid" id="featuredDishes"></div>
+        </div>
+      </section>
+
+      <section class="section tasting-section">
+        <div class="container split-grid split-reverse">
+          <div class="image-stack reveal">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=80" alt="Refined dining table setting with candles">
+          </div>
+          <div class="reveal">
+            <p class="eyebrow">TASTING EXPERIENCES</p>
+            <h3>Choose the evening you want to remember.</h3>
+            <div class="experience-list">
+              <article>
+                <h4>Heritage Tasting Menu</h4>
+                <p>Seven courses featuring the house's refined classics and tableside finishes.</p>
+              </article>
+              <article>
+                <h4>Chef's Fire Counter</h4>
+                <p>An immersive tasting built around live carving, charcoal smoke, and direct chef narration.</p>
+              </article>
+              <article>
+                <h4>Cellar Pairing Night</h4>
+                <p>For guests seeking a premium pairing-led dinner with seasonal wines and crafted non-alcoholic alternatives.</p>
+              </article>
+            </div>
+            <div class="hero-actions">
+              <a href="experience.html" class="btn btn-primary">View Experiences</a>
+              <a href="reservations.html" class="btn btn-outline">Book a Seat</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section gallery-section luxury-panel">
+        <div class="container">
+          <div class="section-head reveal">
+            <div>
+              <p class="eyebrow">ATMOSPHERE</p>
+              <h3>Designed for long conversations and memorable courses.</h3>
+            </div>
+          </div>
+          <div class="gallery-grid reveal">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1000&q=80" alt="Vintage fine dining restaurant interior">
+            <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1000&q=80" alt="Wine glasses and table setup in premium restaurant">
+            <img src="https://images.unsplash.com/photo-1515669097368-22e68427d265?auto=format&fit=crop&w=1000&q=80" alt="Gourmet plated dish on fine dining table">
+          </div>
+        </div>
+      </section>
+
+      <section class="section reserve-banner">
+        <div class="container reserve-banner-inner reveal">
+          <div>
+            <p class="eyebrow">RESERVATIONS</p>
+            <h3>Reserve for dinner, chef's table, or a private occasion.</h3>
+            <p>Bookings are available for lunch service, dinner, and exclusive event dining. Walk-ins are welcome when seating permits.</p>
+          </div>
+          <div class="hero-actions">
+            <a href="reservations.html" class="btn btn-primary">Book a Seat</a>
+            <a href="reservations.html#contact" class="btn btn-outline">Contact the Host Team</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="brand footer-brand"><span class="brand-mark">EH</span><span class="brand-text">EMBER HOUSE</span></div>
+          <p>Five-star dining demo concept for High Net Webstudio.</p>
+        </div>
+        <div>
+          <h4>Visit</h4>
+          <p>18 Amber Lane, Heritage District</p>
+          <p>Open daily · 12 PM – 11 PM</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <a href="menu.html">Menu</a>
+          <a href="experience.html">Experience</a>
+          <a href="reservations.html">Book a Seat</a>
+        </div>
+      </div>
+      <div class="container footer-note">
+        <span>© <span id="year"></span> Ember House</span>
+        <span>Fictional restaurant concept created for portfolio use.</span>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

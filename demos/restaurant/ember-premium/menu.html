@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ember House Menu — Fine Dining Selection</title>
+  <meta name="description" content="Browse Ember House menus including grills, seafood, pasta, small plates, desserts and cellar pairings.">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"><script defer src="script.js"></script>
+  <script src="../../../demo-utils.js" defer></script>
+  <link rel="stylesheet" href="../../../demo-nav.css">
+<link rel="icon" type="image/svg+xml" href="../../../assets/favicon.svg">
+</head>
+<body data-page="menu">
+  <div class="highnet-demo-back"><a href="../../../demos.html">← High Net Webstudio · All 9 demos</a><span>CONCEPT DEMO · FICTIONAL BUSINESS</span></div>
+  <div class="topbar"><div class="container topbar-inner"><span>Seasonal Menu · 42 Signatures</span><a href="reservations.html">Reserve a Seat ↗</a></div></div>
+  <header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html"><span class="brand-mark">EH</span><span class="brand-text">EMBER HOUSE</span></a><button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-label="Open menu"><span></span><span></span></button><nav class="site-nav" id="siteNav"><a href="index.html">Home</a><a href="menu.html" class="active">Menu</a><a href="experience.html">Experience</a><a href="reservations.html">Reservations</a><a href="reservations.html#contact">Contact</a><a href="reservations.html" class="nav-cta">Book a Seat</a></nav></div></header>
+
+  <main>
+    <section class="page-hero premium-banner menu-banner">
+      <div class="container reveal">
+        <p class="eyebrow">THE MENU</p>
+        <h1>From charcoal-grilled signatures to candlelit desserts.</h1>
+        <p>Search the menu, browse by course, or discover chef favourites and signature pairings. Built as readable text so every dish stays easy to explore.</p>
+      </div>
+    </section>
+
+    <section class="section menu-tools-section">
+      <div class="container">
+        <div class="menu-tools reveal">
+          <label class="search-box">
+            <span>Search dishes</span>
+            <input type="search" id="menuSearch" placeholder="Search by dish, ingredient or style">
+          </label>
+          <div class="toggle-row">
+            <label><input type="checkbox" id="vegOnly"> Vegetarian only</label>
+            <label><input type="checkbox" id="chefOnly"> Chef favourites</label>
+          </div>
+        </div>
+        <div class="chip-row reveal" id="menuFilters"></div>
+        <div class="menu-count reveal" id="menuCount"></div>
+        <div class="menu-grid premium-menu-grid reveal" id="menuGrid"></div>
+      </div>
+    </section>
+
+    <section class="section cellar-section luxury-panel">
+      <div class="container split-grid">
+        <div class="reveal">
+          <p class="eyebrow">CELLAR & PAIRINGS</p>
+          <h3>Designed to complement every course.</h3>
+          <p>Pair your evening with vintage-led reds, bright whites, crafted mocktails, or sommelier-selected tasting flights.</p>
+          <ul class="pairing-list">
+            <li>Reserve Collection Pairing · ₹3,900</li>
+            <li>Signature Mocktail Pairing · ₹1,550</li>
+            <li>Chef's Dessert Pairing · ₹1,200</li>
+          </ul>
+        </div>
+        <div class="image-stack reveal">
+          <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=1000&q=80" alt="Wine glasses and premium table setting">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="dish-modal" id="dishModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="dish-modal-backdrop" data-close></div>
+    <div class="dish-modal-card">
+      <button class="modal-close" type="button" aria-label="Close dish details" data-close>×</button>
+      <img id="modalImage" src="" alt="">
+      <div class="dish-modal-body">
+        <p class="eyebrow" id="modalCategory"></p>
+        <h3 id="modalTitle"></h3>
+        <p id="modalDesc"></p>
+        <div class="modal-meta">
+          <span id="modalTags"></span>
+          <strong id="modalPrice"></strong>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer"><div class="container footer-grid"><div><div class="brand footer-brand"><span class="brand-mark">EH</span><span class="brand-text">EMBER HOUSE</span></div><p>Five-star dining demo concept for High Net Webstudio.</p></div><div><h4>Visit</h4><p>18 Amber Lane, Heritage District</p><p>Open daily · 12 PM – 11 PM</p></div><div><h4>Reserve</h4><a href="reservations.html">Book a Seat</a><a href="experience.html">Private Dining</a></div></div><div class="container footer-note"><span>© <span id="year"></span> Ember House</span><span>Fictional restaurant concept created for portfolio use.</span></div></footer>
+</body>
+</html>

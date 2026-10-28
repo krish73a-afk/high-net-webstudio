@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ember House Reservations — Book a Seat</title>
+  <meta name="description" content="Reserve a table at Ember House. Choose a date, time, seating preference and contact the host team.">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"><script defer src="script.js"></script>
+  <script src="../../../demo-utils.js" defer></script>
+  <link rel="stylesheet" href="../../../demo-nav.css">
+<link rel="icon" type="image/svg+xml" href="../../../assets/favicon.svg">
+</head>
+<body data-page="reservations">
+  <div class="highnet-demo-back"><a href="../../../demos.html">← High Net Webstudio · All 9 demos</a><span>CONCEPT DEMO · FICTIONAL BUSINESS</span></div>
+  <div class="topbar"><div class="container topbar-inner"><span>Reserve · Private Dining · Host Team</span><a href="#reservationForm">Book a Seat ↗</a></div></div>
+  <header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html"><span class="brand-mark">EH</span><span class="brand-text">EMBER HOUSE</span></a><button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-label="Open menu"><span></span><span></span></button><nav class="site-nav" id="siteNav"><a href="index.html">Home</a><a href="menu.html">Menu</a><a href="experience.html">Experience</a><a href="reservations.html" class="active">Reservations</a><a href="#contact">Contact</a><a href="#reservationForm" class="nav-cta">Book a Seat</a></nav></div></header>
+  <main>
+    <section class="page-hero premium-banner reserve-page"><div class="container reveal"><p class="eyebrow">RESERVATIONS</p><h1>Reserve a seat for dinner, private dining, or the chef's table.</h1><p>A polished booking experience with clear service details, helpful contact information, and room for special requests.</p></div></section>
+
+    <section class="section"><div class="container reservation-layout">
+      <form class="reservation-form reveal" id="reservationForm">
+        <div class="form-head"><h3>Book a Seat</h3><p>This is a working frontend demo. It shows a reservation summary but does not submit to a live booking system.</p></div>
+        <div class="form-grid">
+          <label><span>Guest name</span><input type="text" id="guestName" required placeholder="Your full name"></label>
+          <label><span>Email</span><input type="email" id="guestEmail" required placeholder="name@example.com"></label>
+          <label><span>Date</span><input type="date" id="visitDate" required></label>
+          <label><span>Guests</span><select id="guestCount"><option>2 guests</option><option>4 guests</option><option>6 guests</option><option>8 guests</option><option>10+ guests</option></select></label>
+        </div>
+        <div class="time-slots">
+          <p>Select a preferred time</p>
+          <div id="timeSlots" class="slots-wrap"></div>
+        </div>
+        <div class="form-grid">
+          <label><span>Seating</span><select id="seatingPref"><option>Main Dining</option><option>Window Table</option><option>Chef's Table</option><option>Private Dining</option></select></label>
+          <label><span>Occasion</span><select id="occasion"><option>Regular Dinner</option><option>Birthday</option><option>Anniversary</option><option>Business Dinner</option><option>Proposal</option></select></label>
+        </div>
+        <label><span>Special requests</span><textarea id="specialNotes" rows="4" placeholder="Dietary requests, celebration notes, accessibility needs..."></textarea></label>
+        <button type="submit" class="btn btn-primary full-btn">Preview Reservation</button>
+      </form>
+
+      <aside class="reservation-info reveal">
+        <div class="info-card">
+          <p class="eyebrow">SERVICE HOURS</p>
+          <h3>Dining schedule</h3>
+          <ul>
+            <li>Lunch · 12:00 PM – 3:30 PM</li>
+            <li>Dinner · 6:30 PM – 11:00 PM</li>
+            <li>Chef's Table · 7:30 PM</li>
+          </ul>
+        </div>
+        <div class="info-card">
+          <p class="eyebrow">AT A GLANCE</p>
+          <h3>Before you visit</h3>
+          <ul>
+            <li>Smart elegant dress code</li>
+            <li>Valet assistance available</li>
+            <li>Private room available on request</li>
+            <li>Dietary requests accepted with prior notice</li>
+          </ul>
+        </div>
+        <div class="info-card" id="contact">
+          <p class="eyebrow">CONTACT THE HOST TEAM</p>
+          <h3>Visit & contact</h3>
+          <p>18 Amber Lane, Heritage District</p>
+          <p>Phone details: provided by the restaurant</p>
+          <p>Contact details are examples for this concept.</p>
+          <p class="sample-note">Demo address only — replace with the client’s actual location and directions link.</p>
+        </div>
+      </aside>
+    </div></section>
+
+    <section class="section luxury-panel"><div class="container contact-layout">
+      <div class="reveal"><p class="eyebrow">MESSAGE THE RESTAURANT</p><h3>Planning something specific?</h3><p>Use the host team message form for private events, collaborations, or larger group enquiries.</p></div>
+      <form class="contact-card reveal" id="contactForm">
+        <label><span>Name</span><input type="text" id="contactName" required></label>
+        <label><span>Email</span><input type="email" id="contactEmail" required></label>
+        <label><span>Topic</span><select id="contactTopic"><option>Private Dining</option><option>Group Dinner</option><option>Collaboration</option><option>General Enquiry</option></select></label>
+        <label><span>Message</span><textarea id="contactMessage" rows="5" required placeholder="Tell us a little more..."></textarea></label>
+        <button class="btn btn-primary full-btn" type="submit">Preview Message</button>
+      </form>
+    </div></section>
+  </main>
+
+  <div class="summary-modal" id="summaryModal" role="dialog" aria-modal="true" aria-labelledby="summaryTitle" hidden>
+    <div class="dish-modal-backdrop" data-summary-close></div>
+    <div class="summary-card">
+      <button class="modal-close" type="button" aria-label="Close preview" data-summary-close>×</button>
+      <p class="eyebrow">REQUEST SUMMARY</p>
+      <h3 id="summaryTitle">Reservation Preview</h3>
+      <div id="summaryBody"></div>
+      <p class="summary-note">Demo only — this preview does not confirm a real table.</p>
+    </div>
+  </div>
+
+  <footer class="site-footer"><div class="container footer-grid"><div><div class="brand footer-brand"><span class="brand-mark">EH</span><span class="brand-text">EMBER HOUSE</span></div><p>Five-star dining demo concept for High Net Webstudio.</p></div><div><h4>Visit</h4><p>18 Amber Lane, Heritage District</p><p>Open daily · 12 PM – 11 PM</p></div><div><h4>Explore</h4><a href="menu.html">Menu</a><a href="experience.html">Experience</a><a href="index.html">Home</a></div></div><div class="container footer-note"><span>© <span id="year"></span> Ember House</span><span>Fictional restaurant concept created for portfolio use.</span></div></footer>
+</body>
+</html>

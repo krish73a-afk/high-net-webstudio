@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 460" role="img" aria-label="Illustration of a toasted sandwich"><defs>
+<radialGradient id="bg"><stop stop-color="#ecdfc8"/><stop offset="1" stop-color="#d4b88f"/></radialGradient>
+<linearGradient id="cup" x2="1" y2="1"><stop stop-color="#fff9ef"/><stop offset=".56" stop-color="#e8d4b7"/><stop offset="1" stop-color="#cda67e"/></linearGradient>
+<radialGradient id="brew"><stop stop-color="#a36337"/><stop offset="1" stop-color="#57331f"/></radialGradient>
+<linearGradient id="bread"><stop stop-color="#eeb96e"/><stop offset=".6" stop-color="#bf7841"/><stop offset="1" stop-color="#8b4a28"/></linearGradient>
+<filter id="shadow"><feGaussianBlur stdDeviation="16"/></filter></defs>
+<rect width="600" height="460" rx="24" fill="url(#bg)"/>
+<circle cx="540" cy="65" r="110" fill="#ffffff" opacity=".18"/><circle cx="75" cy="395" r="125" fill="#ffffff" opacity=".13"/>
+<ellipse cx="294" cy="366" rx="193" ry="30" fill="#6c4a2e" opacity=".15" filter="url(#shadow)"/><ellipse cx="299" cy="326" rx="206" ry="75" fill="#f4edde" stroke="#d4bca0" stroke-width="8"/>
+<path d="M154 236L294 137l153 116-141 111z" fill="#bb7840" stroke="#8f542b" stroke-width="8"/>
+<path d="M155 227l138-93 154 112-140 101z" fill="#eed4a0" stroke="#b17b45" stroke-width="7"/>
+<path d="M164 249l142 104 128-91-144-91z" fill="#65985a" opacity=".9"/>
+<path d="M171 227l137 101 134-90" stroke="#c36a46" stroke-width="16" fill="none"/>
+<path d="M171 214l137 98 134-90" stroke="#f5d99a" stroke-width="28" fill="none"/>
+</svg>
