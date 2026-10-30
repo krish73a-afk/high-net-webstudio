@@ -234,6 +234,7 @@ if (grid) {
         return;
       }
       renderCourses();
+      grid.querySelector(`[data-compare="${id}"]`)?.focus();
     }
   });
   $("#closeCourseDialog").addEventListener("click", () => courseDialog.close());

@@ -33,19 +33,21 @@ function validLink(url){
 }
 
 const grid=$("#projectsGrid");
+const DEMO_FEATURES=[["Course filters", "Course details", "Enquiry preview"], ["Course comparison", "Program search", "Admissions guide"], ["Learning pathways", "Journal stories", "Admissions preview"], ["Menu search", "Dietary filter", "Dish details"], ["Menu discovery", "Dish details", "Reservation preview"], ["Menu filters", "Experience pages", "Reservation preview"], ["Program details", "Plan selection", "Weekly timetable"], ["Program filters", "Training details", "Membership preview"], ["Program search", "Membership selection", "Application preview"]];
 DEMO_PROJECTS.forEach((item,index)=>{
   const card=document.createElement("article");
   card.className="project-card";
   card.dataset.industry=item.category;
   card.dataset.tier=item.tier;
-  card.dataset.name=(item.name+" "+item.description).toLowerCase();
+  card.dataset.name=(item.name+" "+item.description+" "+DEMO_FEATURES[index].join(" ")).toLowerCase();
   const preview=document.createElement("a");preview.className=`preview preview-${item.category}`;
   preview.href=item.url;preview.setAttribute('aria-label',`Preview and open ${item.name} website demo`);
+  preview.dataset.analyticsDemo=item.name;
   const desktop=document.createElement('div');desktop.className='preview-desktop';
   const img=document.createElement('img');img.src=item.image;img.alt=`Current desktop homepage of ${item.name}`;
-  img.width=1280;img.height=720;img.loading=index<3?'eager':'lazy';img.decoding='async';desktop.append(img);
+  img.width=1280;img.height=720;img.loading='lazy';img.decoding='async';desktop.append(img);
   const phone=document.createElement('div');phone.className='preview-phone';phone.setAttribute('aria-hidden','true');
-  const mobile=document.createElement('img');mobile.src=item.mobile;mobile.alt='';mobile.width=390;mobile.height=844;mobile.loading=index<3?'eager':'lazy';mobile.decoding='async';phone.append(mobile);
+  const mobile=document.createElement('img');mobile.src=item.mobile;mobile.alt='';mobile.width=390;mobile.height=844;mobile.loading='lazy';mobile.decoding='async';phone.append(mobile);
   mobile.addEventListener('error',()=>{phone.hidden=true;},{once:true});
   img.addEventListener('error',()=>{
     desktop.hidden=true;phone.hidden=true;
@@ -66,10 +68,14 @@ DEMO_PROJECTS.forEach((item,index)=>{
   const dot=document.createElement("span");dot.className="status-mini-dot";dot.setAttribute("aria-hidden","true");
   status.appendChild(dot);
   if(validLink(item.url)){
-    const link=document.createElement("a");link.className="library-link";link.href=item.url;link.textContent="Open website demo ↗";link.setAttribute("aria-label",`Open ${item.name} website demo`);
+    const link=document.createElement("a");link.className="demo-preview-link";link.href=item.url;link.textContent="Live Preview ↗";link.dataset.analyticsDemo=item.name;link.setAttribute("aria-label",`Open ${item.name} website demo`);
     if(/^https?:\/\//i.test(item.url)){link.target="_blank";link.rel="noopener noreferrer";}
     status.classList.add("available");status.appendChild(document.createTextNode("Live preview available"));
-    card.append(preview,details,description,status,link);
+    const features=document.createElement('ul');features.className='demo-features';DEMO_FEATURES[index].forEach(text=>{const li=document.createElement('li');li.textContent=text;features.append(li);});
+    const compatible=document.createElement('p');compatible.className='demo-compatibility';compatible.textContent='Responsive · Desktop & mobile · Fictional concept';
+    const actions=document.createElement('div');actions.className='demo-actions';
+    const quote=document.createElement('a');quote.textContent='Request a Similar Website ↗';quote.dataset.package=nice(item.tier);quote.href=window.HIGHNET_CURRENCY.url('index.html?'+new URLSearchParams({demo:item.name,service:nice(item.tier)})+'#contact');quote.setAttribute('aria-label','Request a website inspired by '+item.name);
+    actions.append(link,quote);card.append(preview,details,description,features,compatible,actions);
   }else{
     status.appendChild(document.createTextNode("Website preview coming soon"));
     card.append(preview,details,description,status);

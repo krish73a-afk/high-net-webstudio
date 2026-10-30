@@ -37,9 +37,9 @@ a weekly timetable, an approachable teaching-story section, and a front-end admi
 
 ## Add to the High Net Webstudio portfolio
 
-Move the entire `elevate-learning-advanced` folder to:
+Move the entire `elevate-advanced` folder to:
 
-`High_Net_Webstudio_V3/demos/education/elevate-learning-advanced/`
+`High_Net_Webstudio_V3/demos/education/elevate-advanced/`
 
 Then edit the **Elevate Learning** entry in your studio's `demos.js`:
 
@@ -50,7 +50,7 @@ Then edit the **Elevate Learning** entry in your studio's `demos.js`:
   tier: "advanced",
   description: "A colourful, interactive education experience with course discovery and a book-opening welcome.",
   image: "assets/previews/elevate-advanced.webp",
-  url: "demos/education/elevate-learning-advanced/index.html"
+  url: "demos/education/elevate-advanced/index.html"
 },
 ```
 

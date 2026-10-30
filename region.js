@@ -15,7 +15,7 @@
   const FALLBACK={dates:{AED:'2026-10-28',AUD:'2026-10-28',CAD:'2026-10-28',EUR:'2026-10-28',GBP:'2026-10-28',USD:'2026-10-28'},rates:{AED:0.038615,AUD:0.014966,CAD:0.014746,EUR:0.0094241,GBP:0.0078888,USD:0.010515}};
   const ENDPOINT='https://api.frankfurter.dev/v2/rates?base=INR&quotes=USD,GBP,EUR,AED,AUD,CAD';
   const CACHE_KEY='highnet-currency-rates-v1';
-  let regionCode='in',book=FALLBACK;
+  let regionCode='in',book=FALLBACK,rateSource='bundled fallback';
   const region=()=>REGIONS[regionCode];
   const rate=()=>regionCode==='in'?1:book.rates[region().currency];
   const round=amount=>{const unit=10**region().digits;return Math.round((amount+Number.EPSILON)*unit)/unit;};
@@ -42,8 +42,12 @@
     pages=Math.max(0,Math.min(5,Math.trunc(Number(pages))||0));
     const baseInr=pricing.tiers[tier]+pages*pricing.extraPage+(copy?pricing.copy:0)+(gallery?pricing.gallery:0);
     // Convert and round each displayed unit first, so the visible items add to the total.
-    const amount=round(convert(pricing.tiers[tier])+pages*convert(pricing.extraPage)+(copy?convert(pricing.copy):0)+(gallery?convert(pricing.gallery):0));
-    return {baseInr,amount,text:formatAmount(amount),region:regionCode,regionName:region().name,currency:region().currency,date:regionCode==='in'?null:book.dates[region().currency]};
+    const lineItems=[{label:tier[0].toUpperCase()+tier.slice(1)+' package',amount:convert(pricing.tiers[tier])}];
+    if(pages)lineItems.push({label:pages+' extra page'+(pages===1?'':'s')+' × '+format(pricing.extraPage),amount:round(pages*convert(pricing.extraPage))});
+    if(copy)lineItems.push({label:'Copy help',amount:convert(pricing.copy)});
+    if(gallery)lineItems.push({label:'Gallery',amount:convert(pricing.gallery)});
+    const amount=round(lineItems.reduce((sum,item)=>sum+item.amount,0));
+    return {baseInr,amount,text:formatAmount(amount),items:lineItems.map(item=>({...item,text:formatAmount(item.amount)})),region:regionCode,regionName:region().name,currency:region().currency,date:regionCode==='in'?null:book.dates[region().currency]};
   }
   function url(path){
     const target=new URL(path,location.href);target.searchParams.set('region',regionCode);
@@ -82,7 +86,7 @@
       const raw=a.getAttribute('href');if(!raw||raw.startsWith('#'))return;
       let target;try{target=new URL(raw,location.href);}catch(_){return;}
       const file=target.pathname.slice(directory.length);
-      if(target.origin!==location.origin||!target.pathname.startsWith(directory)||!['index.html','services.html','projects.html','demos.html'].includes(file))return;
+      if(target.origin!==location.origin||!target.pathname.startsWith(directory)||!['index.html','services.html','projects.html','demos.html','restaurant-websites.html','fitness-websites.html','education-websites.html','business-websites.html','privacy.html'].includes(file))return;
       const next=url(raw);if(raw!==next)a.setAttribute('href',next);
     });
   }
@@ -93,7 +97,7 @@
     if(strip)strip.hidden=regionCode==='in';
     if(note){
       const date=regionCode==='in'?'':new Intl.DateTimeFormat('en-GB',{day:'numeric',month:'short',year:'numeric',timeZone:'UTC'}).format(new Date(book.dates[region().currency]+'T00:00:00Z'));
-      const text=regionCode==='in'?'Studio prices are shown in INR.':`${region().name} · Approximate ${region().currency} equivalents of our INR prices · Reference rates: ${date}. Final quote confirmed before work starts.`;
+      const text=regionCode==='in'?'Studio prices are shown in INR.':`${region().name} · Approximate ${region().currency} equivalents of our INR prices · ${rateSource}, dated ${date}. Final quote confirmed before work starts.`;
       if(note.textContent!==text)note.textContent=text;
     }
   }
@@ -104,7 +108,7 @@
     return candidate&&Object.keys(FALLBACK.rates).every(code=>Number.isFinite(candidate.rates?.[code])&&candidate.rates[code]>0&&candidate.rates[code]<100&&/^20\d{2}-\d{2}-\d{2}$/.test(candidate.dates?.[code]||'')&&Number.isFinite(Date.parse(candidate.dates[code]+'T00:00:00Z')));
   }
   let cached=null;
-  try{const value=JSON.parse(localStorage.getItem(CACHE_KEY));if(validBook(value)){book=value;cached=value;}}catch(_){}
+  try{const value=JSON.parse(localStorage.getItem(CACHE_KEY));if(validBook(value)){book=value;cached=value;rateSource='cached reference rates';}}catch(_){}
   refresh();
   select?.addEventListener('change',()=>{
     if(!selectRegion(select.value))return;
@@ -124,7 +128,7 @@
       if(!response.ok)return;const rows=await response.json();if(!Array.isArray(rows))return;
       const next={rates:{},dates:{},savedAt:Date.now()};
       for(const row of rows){if(row.base==='INR'&&Object.hasOwn(FALLBACK.rates,row.quote)){next.rates[row.quote]=row.rate;next.dates[row.quote]=row.date;}}
-      if(!validBook(next))return;book=next;
+      if(!validBook(next))return;book=next;rateSource='latest fetched reference rates';
       try{localStorage.setItem(CACHE_KEY,JSON.stringify(next));}catch(_){}
       refresh();document.dispatchEvent(new CustomEvent('highnet:regionchange'));
     }catch(_){/* Use the dated cached or bundled reference rates. */}finally{clearTimeout(timer);}

@@ -28,6 +28,11 @@ body.is-locked,body.intro-locked,body.intro-lock{animation:highnet-body-release 
 body>.highnet-skip{position:fixed;z-index:10000}
 body>:is(.modal,.dish-modal,.summary-modal){position:fixed;inset:0;z-index:2000}
 body>.site-header{position:sticky;top:0;z-index:100}
+/* TLC's original fixed header sat underneath the studio return bar. Keep it in flow. */
+body>.nav-shell{position:sticky;top:0;z-index:100;background:var(--ink,#102b29)}
+body>.nav-shell+main>.hero{padding-top:50px}
+@media(max-width:850px){body>.nav-shell+main>.hero{padding-top:55px}}
+@media(max-width:600px){body>.nav-shell+main>.hero{padding-top:40px}}
 html{scroll-padding-top:100px}
 main :is(.hero-grid,.hero-shell,.join-layout,.form-grid,.manifesto-grid)>*{min-width:0}
 .join-form :is(input,select,textarea){width:100%;min-width:0;max-width:100%}
@@ -44,3 +49,7 @@ main .hero-layout>*{min-width:0}
 .preview-capture body{overflow:auto!important}
 .preview-capture *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
 .preview-capture .hero .hero-content>*{opacity:1!important;transform:none!important}
+
+.highnet-demo-back .studio-enquiry-link{font-weight:500;letter-spacing:0;font-size:11px;min-height:30px;display:flex;align-items:center}
+#timeSlots button:disabled{opacity:.35;cursor:not-allowed}
+#formNote{overflow-wrap:anywhere}

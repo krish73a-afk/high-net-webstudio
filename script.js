@@ -1,4 +1,4 @@
-/* Homepage: recommendations, live demo showcase and an honest email enquiry. */
+/* Homepage: recommendations, live demo showcase with contact handled in contact.js. */
 (() => {
   'use strict';
   const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
@@ -35,36 +35,4 @@
     $('#showcaseName').textContent=item.name;$('#showcaseCategory').textContent=item.category;$('#showcaseIndex').textContent=item.index+' / 03';
     $('#showcaseAnnouncement').textContent='Showing '+item.name+'. Open the preview to try the demo.';
   }));
-  const form=$('#contactForm');if(!form)return;
-  const CONTACT_EMAIL='krish73a@gmail.com';
-  const params=new URLSearchParams(location.search),service=params.get('service');
-  let estimateModel=null,generatedEstimate='';
-  if(service&&[...$('#serviceSelect').options].some(o=>o.value===service))$('#serviceSelect').value=service;
-  if(params.get('estimate')==='1'&&['Basic','Advanced','Premium'].includes(service)){
-    const pages=Math.max(0,Math.min(5,Math.trunc(Number(params.get('pages')))||0));
-    const copy=params.get('copy')==='1',gallery=params.get('gallery')==='1';
-    estimateModel={tier:service.toLowerCase(),pages,copy,gallery};
-  }
-  function updateEnquiryEstimate(){
-    if(!estimateModel)return;
-    const m=estimateModel,q=currency.quote(m.tier,m.pages,m.copy,m.gallery);
-    const text=`Website estimate: ${service}\nAdditional pages: ${m.pages}\nCopy help: ${m.copy?'Yes':'No'}\nGallery: ${m.gallery?'Yes':'No'}\nPricing region: ${q.regionName} (${q.currency})\nIllustrative starting estimate: ${q.text}`;
-    const input=$('#projectMessage');
-    if(!generatedEstimate&&!input.value.trim())input.value=text+'\n\nMy project details: ';
-    else if(generatedEstimate&&input.value.includes(generatedEstimate))input.value=input.value.replace(generatedEstimate,text);
-    else return;
-    generatedEstimate=text;
-  }
-  updateEnquiryEstimate();document.addEventListener('highnet:regionchange',updateEnquiryEstimate);
-  const enquiryText=()=>`Name: ${$('#clientName').value.trim()}\nReply-to: ${$('#clientEmail').value.trim()}\nService: ${$('#serviceSelect').value}\nPricing region: ${currency.regionName()}\nCurrency: ${currency.currency()}\n\nProject details:\n${$('#projectMessage').value.trim()}`;
-  form.addEventListener('submit',e=>{
-    e.preventDefault();if(!form.reportValidity())return;
-    location.href=`mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent('New project enquiry — '+$('#serviceSelect').value)}&body=${encodeURIComponent(enquiryText())}`;
-    $('#formStatus').textContent='Your email app should open with the draft ready. Review it and press Send there.';
-  });
-  $('#copyEnquiry')?.addEventListener('click',async()=>{
-    if(!form.reportValidity())return;
-    try{await navigator.clipboard.writeText('To: '+CONTACT_EMAIL+'\n'+enquiryText());$('#formStatus').textContent='Enquiry copied. Paste it into an email to '+CONTACT_EMAIL+'.';}
-    catch(_){$('#projectMessage').focus();$('#projectMessage').select();$('#formStatus').textContent='Your details are selected. Copy them manually and email '+CONTACT_EMAIL+'.';}
-  });
 })();

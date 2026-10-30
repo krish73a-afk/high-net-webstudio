@@ -19,6 +19,8 @@
     const included=pricing.includedPages[tier.value];
     $('#packageScope').textContent=`${tier.value[0].toUpperCase()+tier.value.slice(1)} includes ${included} page${included===1?'':'s'}. Extra brochure pages: +${currency.format(pricing.extraPage)} each.`;
     $('#pagesOutput').textContent=pages.value;$('#estimateTotal').textContent=quote.text;
+    const breakdown=$('#estimateBreakdown');
+    if(breakdown)breakdown.replaceChildren(...quote.items.map(item=>{const row=document.createElement('div'),dt=document.createElement('dt'),dd=document.createElement('dd');dt.textContent=item.label;dd.textContent=item.text;row.append(dt,dd);return row;}));
     const query=new URLSearchParams({service:tier.value[0].toUpperCase()+tier.value.slice(1),estimate:'1',pages:pages.value,copy:copy.checked?'1':'0',gallery:gallery.checked?'1':'0'});
     $('#estimateCTA').href=currency.url('index.html?'+query+'#contact');
   }

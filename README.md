@@ -1,76 +1,54 @@
 # High Net Webstudio
 
-Updated 28 October 2026. Editable static HTML, CSS and JavaScript. No build step or backend is required.
+Professional upgrade — 30 October 2026. This is the existing editable HTML/CSS/JavaScript project, prepared for GitHub Pages. No framework or build step is required.
 
-## Open
+## Preview and editing
 
-Open this entire folder in VS Code. Choose **Open with Live Server** on `index.html`. Keep the folder structure intact. Relative links also work from HTML files opened directly; clipboard and storage work best on localhost or HTTPS.
+Open the whole folder in VS Code and choose Open with Live Server on `index.html`. Keep `assets/` and `demos/` in place. Use localhost or HTTPS for clipboard and browser preference support.
 
-The studio now has four pages:
+## Pages
 
-- `index.html`: interactive introduction, goal-based service finder, switchable demo showcase, studio facts, process, FAQs and contact.
-- `services.html`: all eight digital services, three website packages, detailed scopes and the website estimator.
-- `projects.html`: the two completed personal projects, live external links and exploration notes.
-- `demos.html`: nine fictional business demos with freshly captured desktop and mobile previews.
+- `index.html`: website/digital-services hero, interactive service finder, eight practical reasons to choose the studio, switchable concept preview, completed-work teaser, five-step process, compact pricing, FAQs and enquiry.
+- `services.html`: all eight existing services, original website tiers, scope/revision/source requirements, comparison table and estimator with itemised breakdown.
+- `projects.html`: the two real personal projects and their purpose, technology, features and responsive considerations.
+- `demos.html`: all nine fictional business concepts, actual desktop/mobile previews, industry/tier filters, searchable features and contextual quotation links.
+- `restaurant-websites.html`, `fitness-websites.html`, `education-websites.html`, `business-websites.html`: original industry content, practical features, scope boundaries and related work.
+- `privacy.html`: enquiry processing, local preferences, external providers and optional analytics.
+- `404.html`: useful recovery links. Main pages are included in `sitemap.xml`; individual fictional demos use `noindex,follow`.
 
-The full service and completed-project collections have moved off Home. Navigation and footer links are consistent across all four pages.
+## Shared files
 
-## Edit
+- `fonts.css` / `assets/fonts/`: locally hosted studio typefaces, preload hints and official licenses.
+- `style.css`: brand tokens, shared components, forms, themes and responsive rules. Unused legacy illustration/work-intro styles were removed safely.
+- `pages.css`: studio layouts, preview frames and the region selector.
+- `professional.css`: new content sections, comparison, enquiry fields, case-study facts, industry pages and refined intro details.
+- `site.js`: shared navigation, theme, progress and reveal behavior.
+- `script.js`: homepage service recommendations and switchable showcase.
+- `intro.js`: one H/N identity reveal per session, Skip, Escape, optional footer replay and reduced-motion support. It never locks the page; hidden-by-default HTML and CSS exit remain fail-safes.
+- `pricing.js` / `region.js`: INR business prices, seven pricing regions, reference-rate cache/fallback and the shared estimate calculation. Only configuration/preferences are stored, never enquiries.
+- `services.js`: category filters, package controls, breakdown and quotation handoff.
+- `site-config.js`: public form/analytics settings. No private credentials belong here.
+- `contact.js`: validation, Formspree integration, honest email/copy alternatives and request states.
+- `analytics.js`: optional clean pageviews and allowlisted actions; disabled until configured.
+- `demos.js` / `demos-page.css`: the nine-card library and filters/search.
+- `demo-nav.css` / `demo-utils.js`: shared fictional-business notice, explicit studio quote link, keyboard and image safeguards.
 
-- `index.html`: homepage content, goal choices, demo showcase, FAQs and contact channels.
-- `services.html`: services, website packages, scopes, add-ons and estimator.
-- `projects.html`: completed projects, external destinations and project notes.
-- `style.css`: existing shared brand styles.
-- `pages.css`: four-page layouts, interactive homepage and desktop/mobile gallery frames.
-- `site.js`: shared theme, navigation, progress and reveal behaviour.
-- `script.js`: homepage recommendations, showcase and email enquiry.
-- `services.js`: service categories and website estimate controls.
-- `pricing.js`: shared INR base prices; also update visible HTML prices when editing.
-- `region.js`: seven pricing regions, currency conversion, dated fallback rates, daily refresh/cache and remembered selection.
-- `intro.js`: H/N opening, skip/Escape handling, session preference and reduced motion.
-- `demos.html`, `demos-page.css`, `demos.js`: gallery layout, filters, search, names, thumbnail paths and demo destinations.
-- `assets/previews/`: 18 fresh screenshots named `*-desktop-v2.webp` and `*-mobile-v2.webp`. Gallery cards show a desktop view with a phone inset. Original unversioned files are retained but unused. A text fallback keeps links usable if an image is unavailable.
-- `assets/favicon.svg`: the studio icon, also used by demos without their own icon.
-- `assets/projects/`: local screenshots of Krish Digital Portfolio and Soul Encore.
-- `demo-nav.css`, `demo-utils.js`: shared return navigation, keyboard, responsive and image safeguards.
-- `demos/`: each concept keeps its own HTML, CSS, JavaScript and assets.
+## Assets and demos
 
-## Prices
+All nine demo folders and their page structures are retained. The gallery uses 18 local versioned WebP previews (`*-desktop-v2.webp`, `*-mobile-v2.webp`) in `assets/previews/`. Old unreferenced previews remain available as source history. Two local project screenshots are in `assets/projects/`; the favicon and sharing image are under `assets/`. The 1200×630 sharing PNG has an editable SVG companion. `assets/testimonial-template.html` is inactive; use only real approved feedback.
 
-Basic starts at ₹1,500 (1 page / up to 5 sections), Advanced at ₹3,000 (up to 3 brochure pages), and Premium at ₹5,000 (up to 4 brochure pages). Scopes assume supplied copy and images, one direction and one consolidated revision round. Additional pages in the estimator are beyond the selected package's included page count.
+Education: Apex Academy / Elevate Learning / The Learning Collective. Restaurants: Urban Bites / Saffron & Stone / Ember House. Fitness: FitZone / Momentum Fitness / FORGE Performance.
 
-Update the visible HTML and `pricing.js` when changing web prices. The estimator and enquiry use the same settings. Digital service prices are separate from the web tiers. Service cards contain the scope and optional add-ons. See `PRICING-NOTES.md` for research and reasoning.
+Demo forms are simulations. Urban Bites now previews locally rather than sending a fictional restaurant message to the studio. Explicit Request a similar website links lead to the real studio enquiry form. Native and custom dialogs preserve the existing interaction model. `?preview=1` remains an optional no-intro capture view.
 
-## Contact
+## Prices and integrations
 
-The working address is **krish73a@gmail.com**. Update `CONTACT_EMAIL` in `script.js` and the HTML email links together if it changes. The form opens an editable draft in the visitor's email app; it never sends automatically. The copy button provides an alternative, with a manual text-selection fallback if clipboard access is unavailable.
+Basic remains ₹1,500 (one page/up to five sections), Advanced ₹3,000 (up to three brochure pages), Premium ₹5,000 (up to four brochure pages), with supplied content and one consolidated revision round. Eight digital-service prices are unchanged. Update visible HTML and `pricing.js` together when intentionally changing rates; see `PRICING-NOTES.md` for the original rationale.
 
-No verified business WhatsApp number or Instagram handle was present in this project. Their icons are non-link cards with a visible explanation. To activate either, replace its `div.channel.channel-unavailable` with an `a.channel` using the confirmed `https://wa.me/` number (international digits only) or confirmed Instagram URL. Remove the unavailable wording. Do not reuse fictional contacts from the demo websites.
+The region selector converts the same Indian prices to USD, GBP, EUR, AED, AUD and CAD. It does not impose international market rates or locate visitors. Rate notes identify the source and date. Converted line items are rounded before summing; the estimator and enquiry use the same calculation.
 
-## Intro and accessibility
+**Online form delivery requires your verified Formspree endpoint.** WhatsApp enquiry drafts already work with the owner-confirmed number; email drafts and copying are also available. Analytics is disabled. No social handles, phone numbers, verification tokens, testimonials or private keys have been invented. Email is `highnet00@gmail.com`.
 
-The homepage intro is hidden without JavaScript. H enters from above and N from below, followed by the studio name. It skips with reduced motion, direct section links and repeat visits in the same tab. Skip, Escape, keyboard navigation, a 2.7-second timer and an independent 3.2-second CSS exit release it. It never locks scrolling or makes the main page inert.
+Read [SETUP.md](SETUP.md) for provider activation, analytics, Search Console, contacts, GitHub publication and later custom-domain changes. Local edits have not automatically published a new GitHub Pages version.
 
-Demo intros retain their styles and have shared no-script and timeout safeguards. Custom pop-ups keep keyboard focus inside and restore the trigger. Reduced-motion CSS suppresses decorative movement. Navigation remains available without JavaScript; the gallery supplies direct demo links as a fallback.
-
-## Demo boundaries
-
-All nine businesses are fictional. Their course, booking and membership previews do not process real enrolments, reservations or payments. Urban Bites can prepare a portfolio enquiry email to the Webstudio address; the visitor reviews and sends it themselves.
-
-Google Fonts and Ember House photos use external services. System fonts and local artwork keep the content usable if they are unavailable. All portfolio previews are local files.
-
-## Cross-page links and preview refresh
-
-Service links pass a recognised service name to `index.html#contact`. Website estimates carry only package/add-on choices in the URL; Home recalculates the total from `pricing.js`. Personal form fields are not put into these URLs. Old homepage bookmarks for services, packages, estimates and selected work redirect to their new pages when JavaScript is available.
-
-To refresh screenshots, open each demo with `?preview=1` through Live Server. This optional capture view hides intro overlays and decorative motion while retaining the page content. Capture desktop and phone sizes, save new local WebP assets, and update both `image` and `mobile` in `DEMO_PROJECTS` in `demos.js`. Use new filenames to avoid stale browser images. Normal demo URLs preserve their animations.
-
-## Region selector
-
-The top-right selector is present on Home, Services, Projects and Demos. India (INR) is the default. The other choices display USD, GBP, EUR, AED, AUD or CAD. These are currency equivalents of the same Indian starter prices; no international market-price multiplier is applied.
-
-The choice is remembered locally. Studio navigation and enquiry links also carry the region in their URL, so it works when browser storage is unavailable. No IP lookup or automatic location detection is used. Service prices, optional extras, website tiers, homepage recommendations, dropdown labels and estimate totals update together. Enquiry drafts include the region and currency, and changing region preserves typed project notes.
-
-`region.js` uses the public [Frankfurter reference-rate API](https://frankfurter.dev/). Rates refresh with a short timeout and a 24-hour browser cache. If the network is unavailable, the last valid cached rates or the bundled **28 October 2026** snapshot remain usable; the selected currency's reference date is shown. Non-INR prices are labelled approximate. Converted line items are rounded to the currency's precision before being added to the estimate, so the displayed items add to the displayed total.
-
-To change base business prices, edit `pricing.js` and visible HTML prices. To change supported regions or refresh the bundled reference snapshot, edit the clearly named `REGIONS` and `FALLBACK` settings in `region.js`. The fictional demo businesses retain their own example prices; the selector controls Webstudio service pricing.
+WhatsApp: `+919557865567`. The contact card opens a general chat; Continue on WhatsApp carries the completed enquiry into a reviewable draft. Instagram is left unconfigured.

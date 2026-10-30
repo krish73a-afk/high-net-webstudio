@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://krish73a-afk.github.io/high-net-webstudio/sitemap.xml

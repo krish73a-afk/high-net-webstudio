@@ -36,14 +36,14 @@ The site uses no JavaScript framework, no build tools, and no external animation
 
 **Journal content:** edit the `STORIES` object in `script.js` and each story card in `journal.html`.
 
-**Gallery link:** when this folder is placed inside `High_Net_Webstudio_V3/demos/education/learning-collective-premium/`, the footer's `../../../demos.html` link returns to the portfolio gallery.
+**Gallery link:** when this folder is placed inside `High_Net_Webstudio_V3/demos/education/collective-premium/`, the footer's `../../../demos.html` link returns to the portfolio gallery.
 
 ## Link from High Net Webstudio's demos.js
 
 Copy `assets/gallery-preview.webp` into your main portfolio's `assets/previews/collective-premium.webp` if you want the gallery to display this site screenshot. Then set the premium education entry's URL:
 
 ```js
-url: "demos/education/learning-collective-premium/index.html"
+url: "demos/education/collective-premium/index.html"
 ```
 
 ## Important

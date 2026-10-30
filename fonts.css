@@ -1,0 +1,5 @@
+/* Official Google Fonts Latin subsets, self-hosted under SIL Open Font Licenses.
+   Licenses and source provenance: assets/fonts/*-OFL.txt and SETUP.md. */
+@font-face{font-family:'DM Sans';font-style:normal;font-weight:400 700;font-display:swap;src:url('assets/fonts/dm-sans-latin-normal-400-700.woff2') format('woff2')}
+@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:400 700;font-display:swap;src:url('assets/fonts/space-grotesk-latin-normal-400-700.woff2') format('woff2')}
+@font-face{font-family:'Playfair Display';font-style:italic;font-weight:500;font-display:swap;src:url('assets/fonts/playfair-display-latin-italic-500.woff2') format('woff2')}
