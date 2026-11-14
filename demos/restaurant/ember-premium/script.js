@@ -106,6 +106,8 @@ if(menuGrid){
     });
     menuGrid.innerHTML = filtered.map(d=>cardMarkup(d)).join('');
     menuCount.textContent = `Showing ${filtered.length} of ${DISHES.length} dishes`;
+    let empty=document.getElementById('menuEmptyState');if(!empty){empty=document.createElement('p');empty.id='menuEmptyState';empty.className='sample-note';empty.setAttribute('role','status');menuGrid.after(empty);}
+    empty.hidden=filtered.length>0;empty.textContent='No dishes match. Clear the search or try another category.';
   }
 
   menuFilters.addEventListener('click', e=>{
@@ -224,6 +226,9 @@ if (reservationForm) {
   const now = new Date();
   const localToday = [now.getFullYear(), String(now.getMonth()+1).padStart(2,'0'), String(now.getDate()).padStart(2,'0')].join('-');
   dateInput.min = localToday;
+  const seating=document.getElementById('seatingPref');
+  function syncSeating(){const chef=/chef/i.test(seating.value);document.querySelectorAll('#timeSlots button').forEach(button=>{button.disabled=chef&&button.textContent!=='7:30 PM';if(chef){const active=button.textContent==='7:30 PM';button.classList.toggle('active',active);button.setAttribute('aria-pressed',String(active));}});if(chef)selectedTime='7:30 PM';}
+  seating.addEventListener('change',syncSeating);syncSeating();
   reservationForm.addEventListener('submit', e => {
     e.preventDefault();
     if (!reservationForm.reportValidity()) return;

@@ -20,18 +20,18 @@ Open `index.html` in your browser, or use **VS Code → Live Server**. All illus
 - Search is live and matches dish names, descriptions and ingredient text.
 - Category chips and the vegetarian-only checkbox work together.
 - View details opens an accessible native dialog; Esc closes it.
-- The email form opens a prefilled email to `krish73a@gmail.com`. It does **not** send automatically, and stores no messages.
+- The restaurant contact form shows a local enquiry preview only. Nothing is sent or stored. Use the separate studio quotation link for a real High Net Webstudio enquiry.
 - Menu names, prices, ingredients and hours are mock content. Verify all details before using the page for a real restaurant.
 
 ## Add to High Net Webstudio gallery
 
-Copy the `urban-bites-basic` directory to:
+Copy the `urban-basic` directory to:
 
-`High_Net_Webstudio_V3/demos/restaurant/urban-bites-basic/`
+`High_Net_Webstudio_V3/demos/restaurant/urban-basic/`
 
 In the parent website's `demos.js`, change the Urban Bites record to:
 
-`url: "demos/restaurant/urban-bites-basic/index.html"`
+`url: "demos/restaurant/urban-basic/index.html"`
 
 The existing gallery image can be replaced with an actual screenshot of this demo.
 

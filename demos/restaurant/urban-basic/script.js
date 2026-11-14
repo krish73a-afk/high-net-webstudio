@@ -103,13 +103,10 @@ $("#dialogBack").addEventListener("click",closeDialog);
 dialog.addEventListener("click",event=>{if(event.target===dialog)closeDialog();});
 dialog.addEventListener("close",()=>{if(previousTrigger && previousTrigger.isConnected)previousTrigger.focus();});
 
-// Contact demo: prepare email, don't claim it sent.
-$("#contactForm").addEventListener("submit",event=>{
+// Fictional restaurant: preview locally, with no email or network transmission.
+$('#contactForm').addEventListener('submit',event=>{
   event.preventDefault();const form=event.currentTarget;if(!form.reportValidity())return;
-  const name=$("#contactName").value.trim(), email=$("#contactEmail").value.trim(), message=$("#contactMessage").value.trim();
-  if(name.length<2 || message.length<5){$("#formNote").textContent="Please enter your name and a message before preparing your email.";return;}
-  const subject=encodeURIComponent("Urban Bites concept — website enquiry");
-  const body=encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}\n\nSent from Urban Bites portfolio concept.`);
-  window.location.href=`mailto:krish73a@gmail.com?subject=${subject}&body=${body}`;
-  $("#formNote").textContent="Your email app should open now. Review and send the message from there.";
+  const name=$('#contactName').value.trim(),message=$('#contactMessage').value.trim();
+  if(name.length<2||message.length<5){$('#formNote').textContent='Add your name and a short message before previewing.';return;}
+  $('#formNote').textContent=`Message preview — nothing sent. Name: ${name}. Email: ${$('#contactEmail').value.trim()}. Message: ${message}`;
 });

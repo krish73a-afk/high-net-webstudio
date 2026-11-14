@@ -20,13 +20,13 @@ This is the updated premium restaurant website for High Net Webstudio. It uses a
 - `assets/food-fallback.svg` — dish image fallback
 
 ## How to open
-Extract the ZIP. Open the `ember-house-premium` folder in VS Code and start Live Server at `index.html`. If replacing a previous version, replace the whole folder and refresh with `Ctrl + Shift + R` to clear cached CSS/JS.
+Extract the ZIP. Open the `ember-premium` folder in VS Code and start Live Server at `index.html`. If replacing a previous version, replace the whole folder and refresh with `Ctrl + Shift + R` to clear cached CSS/JS.
 
 ## Add to High Net Webstudio
 In the Ember House project in `demos.js`, use:
 
 ```javascript
-url: "demos/restaurant/ember-house-premium/index.html"
+url: "demos/restaurant/ember-premium/index.html"
 ```
 
 ## Notes

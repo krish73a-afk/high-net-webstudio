@@ -146,7 +146,8 @@ contactForm.addEventListener('submit',event=>{
     ['Interested in',interestSelect.value],
     ['Message',$('#contactMessage').value.trim()]
   ];
-  if(!data[0][1]||!data[3][1]){contactForm.reportValidity();return}
+  for(const id of ['contactName','contactMessage']){const input=document.getElementById(id);input.setCustomValidity(input.value.trim()?'':'Please enter text, not only spaces.');}
+  if(!contactForm.reportValidity())return;
   const dl=$('#previewFields');dl.replaceChildren();
   data.forEach(([key,value])=>{
     const div=document.createElement('div');const dt=document.createElement('dt');const dd=document.createElement('dd');
@@ -160,3 +161,5 @@ $('#editEnquiry').addEventListener('click',()=>{$('#enquiryPreview').hidden=true
 // Close menu with Escape or when tapping outside it.
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeMenu()});
 document.addEventListener('click',e=>{if(!e.target.closest('.header'))closeMenu()});
+
+['contactName','contactMessage'].forEach(id=>document.getElementById(id).addEventListener('input',event=>event.target.setCustomValidity('')));

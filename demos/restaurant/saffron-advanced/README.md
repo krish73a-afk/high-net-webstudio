@@ -33,11 +33,11 @@ On the first homepage visit in a tab, an illustrated cup fills from the bottom w
 
 Put the folder at:
 
-`demos/restaurant/saffron-stone-advanced/`
+`demos/restaurant/saffron-advanced/`
 
 Then edit the `Saffron & Stone` entry inside your main portfolio's `demos.js`:
 
-`url: "demos/restaurant/saffron-stone-advanced/index.html"`
+`url: "demos/restaurant/saffron-advanced/index.html"`
 
 All pricing, hours, menus, identities and booking data are fictional for display only. Photos are replaced by original SVG illustrations to avoid network or licensing dependencies.
 

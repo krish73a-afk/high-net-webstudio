@@ -11,7 +11,7 @@ Files included:
 - The rolling dumbbell intro runs on the homepage on the first visit per browser tab. You can replay it with index.html?intro=1; it can be skipped and honours reduced-motion settings.
 - All forms are frontend previews only and do not submit to a real backend.
 - To connect inside High Net Webstudio, use:
-  url: "demos/fitness/momentum-fitness-advanced/index.html"
+  url: "demos/fitness/momentum-advanced/index.html"
 
 ## Updates in V2
 - Fixed dynamically generated program cards remaining invisible.

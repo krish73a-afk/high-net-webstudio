@@ -15,4 +15,4 @@ Files included:
 
 ## Portfolio gallery link
 Use this in demos.js:
-url: "demos/fitness/forge-performance-premium/index.html"
+url: "demos/fitness/forge-premium/index.html"
