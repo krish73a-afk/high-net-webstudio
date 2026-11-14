@@ -4,12 +4,9 @@
   const settings=window.HIGHNET_CONFIG?.analytics;
   const demos=['Apex Academy','Elevate Learning','The Learning Collective','Urban Bites','Saffron & Stone','Ember House','FitZone','Momentum Fitness','FORGE Performance'];
   const services=['Basic','Advanced','Premium','Data management','Video editing','Photo editing','Social media management','Post & thumbnail design','Landing page','Website maintenance','Document formatting'];
-  const allowed=new Set(['Demo Preview','Service Enquiry','Contact Email','Contact WhatsApp','Quote Prepared','Enquiry Submitted',...demos.map(name=>'Demo Preview: '+name),...services.map(name=>'Service Enquiry: '+name)]);
+  const allowed=new Set(['Demo Preview','Service Enquiry','Contact Email','Contact WhatsApp','Contact Instagram',...demos.map(name=>'Demo Preview: '+name),...services.map(name=>'Service Enquiry: '+name)]);
   let active=false;
   window.HIGHNET_TRACK=name=>{if(active&&allowed.has(name))window.plausible?.(name);};
-  const formReady=/^https:\/\/formspree\.io\/f\/[a-z0-9]+$/i.test(window.HIGHNET_CONFIG?.formEndpoint||'');
-  const formState=document.getElementById('privacyFormState');
-  if(formReady&&formState)formState.textContent='Online submission is activated. Sending this form shares the supplied enquiry with Formspree for processing and delivery to the studio. Preparing an email draft and copying remain available alternatives.';
   const analyticsState=document.getElementById('privacyAnalyticsState');
   if(settings?.enabled&&analyticsState)analyticsState.textContent='Plausible is configured. It is inactive when Do Not Track is enabled, during local preview, or when its script is unavailable.';
   if(!settings?.enabled||!/^https:\/\/plausible\.io\/js\/pa-[a-zA-Z0-9_-]+\.js$/.test(settings.scriptUrl||'')||navigator.doNotTrack==='1'||!['https:','http:'].includes(location.protocol)||['localhost','127.0.0.1'].includes(location.hostname))return;
