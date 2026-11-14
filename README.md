@@ -1,6 +1,6 @@
 # High Net Webstudio
 
-Professional upgrade — 30 October 2026. This is the existing editable HTML/CSS/JavaScript project, prepared for GitHub Pages. No framework or build step is required.
+Professional update — 14 November 2026. This is the existing editable HTML/CSS/JavaScript project, prepared for GitHub Pages. No framework or build step is required.
 
 ## Preview and editing
 
@@ -10,7 +10,7 @@ Open the whole folder in VS Code and choose Open with Live Server on `index.html
 
 - `index.html`: website/digital-services hero, interactive service finder, eight practical reasons to choose the studio, switchable concept preview, completed-work teaser, five-step process, compact pricing, FAQs and enquiry.
 - `services.html`: all eight existing services, original website tiers, scope/revision/source requirements, comparison table and estimator with itemised breakdown.
-- `projects.html`: the two real personal projects and their purpose, technology, features and responsive considerations.
+- `projects.html`: three live personal projects (Krish Digital Portfolio, Soul Encore and BcaSemA), with their purpose, features and USD budgets.
 - `demos.html`: all nine fictional business concepts, actual desktop/mobile previews, industry/tier filters, searchable features and contextual quotation links.
 - `restaurant-websites.html`, `fitness-websites.html`, `education-websites.html`, `business-websites.html`: original industry content, practical features, scope boundaries and related work.
 - `privacy.html`: enquiry processing, local preferences, external providers and optional analytics.
@@ -27,8 +27,8 @@ Open the whole folder in VS Code and choose Open with Live Server on `index.html
 - `intro.js`: one H/N identity reveal per session, Skip, Escape, optional footer replay and reduced-motion support. It never locks the page; hidden-by-default HTML and CSS exit remain fail-safes.
 - `pricing.js` / `region.js`: INR business prices, seven pricing regions, reference-rate cache/fallback and the shared estimate calculation. Only configuration/preferences are stored, never enquiries.
 - `services.js`: category filters, package controls, breakdown and quotation handoff.
-- `site-config.js`: public form/analytics settings. No private credentials belong here.
-- `contact.js`: validation, Formspree integration, honest email/copy alternatives and request states.
+- `site-config.js`: public WhatsApp and analytics settings. No private credentials belong here.
+- `contact.js`: local enquiry validation and a visitor-reviewed WhatsApp draft.
 - `analytics.js`: optional clean pageviews and allowlisted actions; disabled until configured.
 - `demos.js` / `demos-page.css`: the nine-card library and filters/search.
 - `demo-nav.css` / `demo-utils.js`: shared fictional-business notice, explicit studio quote link, keyboard and image safeguards.
@@ -47,8 +47,8 @@ Basic remains ₹1,500 (one page/up to five sections), Advanced ₹3,000 (up to 
 
 The region selector converts the same Indian prices to USD, GBP, EUR, AED, AUD and CAD. It does not impose international market rates or locate visitors. Rate notes identify the source and date. Converted line items are rounded before summing; the estimator and enquiry use the same calculation.
 
-**Online form delivery requires your verified Formspree endpoint.** WhatsApp enquiry drafts already work with the owner-confirmed number; email drafts and copying are also available. Analytics is disabled. No social handles, phone numbers, verification tokens, testimonials or private keys have been invented. Email is `highnet00@gmail.com`.
+The enquiry form validates project details and prepares a WhatsApp draft only after the visitor chooses Continue on WhatsApp. The message is not sent automatically. A direct email link remains available beside the form, and Instagram links to `@highn.et`. Project budgets are listed in USD: Portfolio $80, Soul Encore $100 and BcaSemA $50. Analytics is disabled.
 
-Read [SETUP.md](SETUP.md) for provider activation, analytics, Search Console, contacts, GitHub publication and later custom-domain changes. Local edits have not automatically published a new GitHub Pages version.
+Read [SETUP.md](SETUP.md) for analytics, Search Console, contacts, GitHub publication and later custom-domain changes. Local edits have not automatically published a new GitHub Pages version.
 
-WhatsApp: `+919557865567`. The contact card opens a general chat; Continue on WhatsApp carries the completed enquiry into a reviewable draft. Instagram is left unconfigured.
+WhatsApp: `+919557865567`. The contact card opens a general chat; Continue on WhatsApp carries the completed enquiry into a reviewable draft. Instagram: `https://www.instagram.com/highn.et/`.
